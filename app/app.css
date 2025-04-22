@@ -3,7 +3,7 @@
 @import "tw-animate-css";
 @font-face {
   font-family: "Cleanwork";
-  src: url("/fonts/Cleanwork.ttf");
+  src: url("fonts/Cleanwork.ttf");
 }
 
 @custom-variant dark (&:is(.dark *));
@@ -41,7 +41,8 @@ body {
   --muted-foreground: #3949ab;
 
   --accent: #00bcd4;
-  --accent-foreground: #90e0ef;
+  --accent-100: #90e0ef;
+  --accent-foreground: #ffffff;
   --destructive: #ff7043;
   --destructive-foreground: #ffffff;
 
@@ -84,6 +85,7 @@ body {
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
+  --color-accent-100: var(--accent-100);
   --color-accent-foreground: var(--accent-foreground);
   --color-destructive: var(--destructive);
   --color-border: var(--border);
@@ -116,4 +118,12 @@ body {
 .w-fit-container {
   width: min(100%, var(--container-width));
   margin-inline: auto;
+}
+
+.count-service {
+  counter-reset: service;
+}
+
+.increment-service {
+  counter-increment: service;
 }

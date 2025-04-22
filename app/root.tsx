@@ -15,8 +15,10 @@ import "./app.css";
 import Header from "./components/Header";
 import i18n from "../i18n"; // Import your i18n configuration
 import { useTranslation } from "react-i18next"; // Import useTranslation
+import Footer from "./components/Footer";
 
 export const links: Route.LinksFunction = () => [
+  { rel: "icon", href: "/favicon.png" },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
@@ -70,7 +72,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <Header />
         <main>{children}</main>
-
+        <Footer/>
         <ScrollRestoration />
         <Scripts />
       </body>

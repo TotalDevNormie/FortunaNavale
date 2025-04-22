@@ -1,59 +1,65 @@
-import { Link, useNavigate, useParams } from "react-router";
+import { Link, useNavigate, useParams } from "react-router"; // Use react-router-dom
 import { useTranslation } from "react-i18next";
-import { ChevronsUpDown, Check } from "lucide-react"; // Icons for the button
-
+import { Globe } from "lucide-react"; // Using Globe icon for language
+import { supportedLngs } from "i18n";
 import LogoFull from "~/assets/logo-full.svg";
 import Shape from "~/assets/header-shape.svg";
-import { Button } from "./ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "./ui/dropdown-menu"; // Import shadcn components
-import { cn } from "~/lib/utils"; // Assuming you have a `lib/utils.ts` from shadcn setup
+import { Button } from "./ui/button"; // Keep if needed for other buttons
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "./ui/select";
+} from "./ui/select"; // shadcn Select components
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "./ui/navigation-menu";
 
-// Define your supported languages (you might want to centralize this)
-const supportedLanguages = [
-  { code: "en", name: "English" },
-  { code: "es", name: "Español" },
-  // Add other supported languages here
+// Define your supported languages (centralize this in a config file ideally)
+
+export const pages = [
+  "home",
+  "about",
+  "services",
+  "projects",
+  "vacancies",
+  "contact",
 ];
 
 export default function Header() {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation(); // Add t if you need to translate menu items etc.
   const navigate = useNavigate();
   const params = useParams<{ lang?: string; "*"?: string }>(); // Get current lang and wildcard route
 
   // Determine the current language from the URL or fallback
-  const currentLangCode = params.lang || (i18n.options.fallbackLng as string);
-  const currentLanguage = supportedLanguages.find(
-    (lang) => lang.code === currentLangCode
+  // Ensure fallbackLng is correctly configured in your i18next setup
+  const currentLangCode =
+    params.lang || (i18n.resolvedLanguage as string) || "en"; // More robust fallback
+
+  const currentLanguage = supportedLngs.find(
+    (lang) => lang === currentLangCode
   );
 
   const handleLanguageChange = (newLangCode: string) => {
     if (newLangCode !== currentLangCode) {
       // Construct the new path preserving the rest of the URL
       const currentPathWithoutLang = params["*"] || "";
-      const newPath = `/${newLangCode}/${currentPathWithoutLang}`;
-      // Use replace to avoid adding multiple language changes to history
-      navigate(newPath.replace(/\/$/, ""), { replace: true }); // Remove trailing slash if exists
+      // Ensure leading slash for the rest of the path if it exists
+      const restOfPath = currentPathWithoutLang
+        ? `/${currentPathWithoutLang}`
+        : "";
+      const newPath = `/${newLangCode}${restOfPath}`;
+
+      // Change i18next language first
+      i18n.changeLanguage(newLangCode).then(() => {
+        // Then navigate. Use replace to avoid adding multiple language changes to history
+        navigate(newPath, { replace: true });
+      });
     }
   };
 
@@ -67,36 +73,44 @@ export default function Header() {
         />
         <Link to={`/${currentLangCode}`}>
           {/* Link logo to current language home */}
-          <img src={LogoFull} alt="Logo" className="h-14" />
+          <img src={LogoFull} alt="Fortuna Navale Logo" className="h-14" />{" "}
+          {/* Added specific alt text */}
         </Link>
       </div>
       {/* Adjusted container for spacing */}
-      <div className="w-fit-container flex items-center gap-2 p-4 justify-between">
+      <div className="w-fit-container mx-auto flex items-center gap-4 py-4 justify-between">
         <NavigationMenu>
           <NavigationMenuList>
-            <NavigationMenuItem>
-              <Link to="#">
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Documentation
-                </NavigationMenuLink>
-              </Link>
-            </NavigationMenuItem>
+            {pages.map((page, index) => (
+              <NavigationMenuItem key={index}>
+                <Link to={`/${currentLangCode}/${page}`}>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    {t(`menu.${page}`)}
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+            ))}
           </NavigationMenuList>
         </NavigationMenu>
-        {/* Language Seletor Dropdown */}
-        <div className="flex gap-2">
-          <Select>
-            <SelectTrigger className="w-[180px]">
-              <SelectValue placeholder="Theme" />
+        <div className="flex gap-2 items-center">
+          <Select value={currentLangCode} onValueChange={handleLanguageChange}>
+            <SelectTrigger className="w-[5rem] text-background gap-2 uppercase">
+              <SelectValue
+                placeholder={t("menu.language") || "Language"}
+                className="uppercase text-background"
+              >
+                {currentLanguage}
+              </SelectValue>
             </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="light">Light</SelectItem>
-              <SelectItem value="dark">Dark</SelectItem>
-              <SelectItem value="system">System</SelectItem>
+            <SelectContent className="w-[5rem]">
+              {supportedLngs.map((lang) => (
+                <SelectItem key={lang} value={lang} className="uppercase">
+                  {lang}
+                </SelectItem>
+              ))}
             </SelectContent>
           </Select>
-          {/* Example Button - adjust as needed */}
-          <Button>Alijdfo sjoiao p</Button>
+          <Button>{t("menu.conatct")}</Button>
         </div>
       </div>
     </header>

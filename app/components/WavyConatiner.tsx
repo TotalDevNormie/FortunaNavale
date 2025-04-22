@@ -1,12 +1,19 @@
 import type { ReactNode } from "react";
+import { cn } from "~/lib/utils";
 
 type Props = {
   children: ReactNode;
   secondary?: boolean;
+  className?: string;
   end?: boolean;
 };
 
-export default function WavyContainer({ children, secondary, end }: Props) {
+export default function WavyContainer({
+  children,
+  secondary,
+  end,
+  className,
+}: Props) {
   return (
     <div
       className={`relative mt-14 ${
@@ -19,7 +26,7 @@ export default function WavyContainer({ children, secondary, end }: Props) {
           : "after:content-[''] after:bg-[url(/wave-2.svg)] after:w-full after:h-28 after:absolute after:bottom-0 after:translate-y-full after:z-10 after:bg-no-repeat after:bg-size-[100%_100%]"
       }`}
     >
-      <div className="w-fit-container">{children}</div>
+      <div className={cn("w-fit-container", className)}>{children}</div>
     </div>
   );
 }

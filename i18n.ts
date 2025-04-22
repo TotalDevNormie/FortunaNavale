@@ -3,6 +3,8 @@ import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import HttpApi from "i18next-http-backend";
 
+export const supportedLngs = ["en", "fr", "ru"];
+
 i18n
   .use(HttpApi)
   .use(LanguageDetector)
@@ -10,7 +12,7 @@ i18n
   .init({
     fallbackLng: "en",
     debug: true,
-    supportedLngs: ["en", "fr", "ru"],
+    supportedLngs,
     backend: {
       loadPath: "/locales/{{lng}}/{{ns}}.json",
     },
