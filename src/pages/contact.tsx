@@ -3,6 +3,8 @@ import Heading from "../components/Heading";
 import WavyContainer from "../components/WavyConatiner";
 import { Input } from "../components/ui/input";
 import { AutosizeTextarea } from "../components/ui/autosize-textarea";
+import { Button } from "~/components/ui/button";
+import Map from "~/components/Map";
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -12,32 +14,40 @@ export default function Contact() {
         {t("page.contact.title")}
       </Heading>
       <WavyContainer>
-        <h2>{t("page.contact.subtitle")}</h2>
-        <p>{t("page.contact.content")}</p>
+        <h2 className="text-center font-mono font-bold text-3xl text-secondary-100 mb-8">{t("page.contact.subtitle")}</h2>
+        <p className="text-center text-secondary-100 mb-16">{t("page.contact.content")}</p>
 
-        <form className="grid grid-cols-2 gap-4">
+        <form id="contact-form" className="grid grid-cols-2 gap-8">
           <label className="grid gap-2">
             <span className="">{t("page.contact.form.name")}</span>
-            <Input />
+            <Input name="name" type="text" required/>
           </label>
           <label className="grid gap-2">
             <span className="">{t("page.contact.form.email")}</span>
-            <Input />
+            <Input name="email" type="email" required/>
           </label>
           <label className="grid gap-2">
             <span className="">{t("page.contact.form.phone")}</span>
-            <Input />
+            <Input type="phone" name="phone" required />
           </label>
           <label className="grid gap-2">
             <span className="">{t("page.contact.form.subject")}</span>
-            <Input />
+            <Input name="subject" type="text" required/>
           </label>
           <label className="grid gap-2 col-span-2">
-            <span className="">{t("page.contact.form.name")}</span>
-            <AutosizeTextarea className="" />
+            <span className="">{t("page.contact.form.message")}</span>
+            <AutosizeTextarea name="message" required />
           </label>
         </form>
+          <Button form="contact-form" type="submit" className="cursor-pointer mt-8 px-8 py-4">
+            {t("page.contact.form.send")}
+          </Button>
       </WavyContainer>
+      <WavyContainer secondary>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, iusto.
+
+      </WavyContainer>
+      <Map />
     </div>
   );
 }
