@@ -1,0 +1,102 @@
+{
+  "page": {
+    "home": {
+      "title": {
+        "highlight": "INNOVATIVE",
+        "middle": "Solutions",
+        "lowlight": "in Shipbuilding"
+      },
+      "aboutUs": {
+        "title": "About Company",
+        "content": [
+          "Fortuna Navale is a leading provider of qualified personnel for projects in construction, shipbuilding, industry and other sectors.",
+          "We specialize in providing flexible staffing solutions tailored to our clients' needs, from short-term projects with a small number of specialists to long-term contracts with teams of up to 60 people."
+        ]
+      },
+      "services": {
+        "title": "Services",
+        "sections": [
+          {
+            "title": "Welding",
+            "highlight": "OZ",
+            "content": [
+              "We provide certified specialists in the following types of welding:",
+              "MIG (131), MAG (135, 136), MMA, TIG (141), Gas welding",
+              "Our welders comply with the ISO 9606-1 standard and have experience working in workshops and industrial facilities."
+            ]
+          },
+          {
+            "title": "Insulation",
+            "content": [
+              "We offer comprehensive solutions for thermal, cryogenic, sound and acoustic insulation, including:",
+              "Processing of pipelines, tanks, vessels and industrial facilities",
+              "Application of modern materials and technologies in the oil and gas, chemical and other industries"
+            ]
+          },
+          {
+            "title": "Installation of industrial equipment",
+            "content": [
+              "Our specialists have expertise in:",
+              "Dismantling, transportation and installation of heavy equipment.",
+              "Preparation of foundations, alignment and commissioning of facilities."
+            ]
+          },
+          {
+            "title": "Painting and surface protection",
+            "content": [
+              "We perform:",
+              "Painting of large metal structures using modern materials.",
+              "Sandblasting to remove old paint and corrosion.",
+              "Application of protective coatings for durability and corrosion control."
+            ]
+          },
+          {
+            "title": "Professional preparation and laying of cable routes on a ship",
+            "content": [
+              "Professional preparation and laying of cable routes on a ship, including design, installation and testing in accordance with international standards"
+            ]
+          }
+        ]
+      },
+      "projects": {
+        "title": "Projects"
+      },
+      "contact": {
+        "title": "Contact",
+        "people": [
+          {
+            "name": "Angelina Vinnicenko",
+            "position": "Assistant Manager"
+          },
+          {
+            "name": "Dmitrijs Mihailovs",
+            "position": "Assistant Manager"
+          },
+          {
+            "name": "Siarhejka Siarhei",
+            "position": "Technical Director"
+          },
+          {
+            "name": "Sergejs Sklarovs",
+            "position": "Director"
+          }
+        ]
+      },
+      "footer": {
+        "copyright": "© 2024 Fortuna Navale"
+      }
+    },
+    "menu": {
+      "home": "Home",
+      "aboutUs": "About Us",
+      "services": "Services",
+      "projects": "Projects",
+      "vacancies": "Vacancies",
+      "contact": "Contact"
+    },
+    "buttons": {
+      "orderService": "Order service",
+      "more": "More"
+    }
+  }
+}
