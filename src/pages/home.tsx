@@ -98,8 +98,8 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-3 gap-8 h-[30rem]">
           {Array.isArray(projects) &&
-            projects.map((project, index) => (
-              <div className="relative">
+            projects.map((project) => (
+              <div key={project.content} className="relative">
                 <img
                   src={project.image}
                   className={`w-full h-full object-cover block`}

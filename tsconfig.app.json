@@ -6,14 +6,35 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-
+    
     /* Bundler mode */
     "moduleResolution": "bundler",
+    "emitDeclarationOnly": true,
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
-    "noEmit": true,
     "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "types": ["react/jsx-runtime"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    
+    /* For declaration files */
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "./dist",
+    
+    /* Path aliases */
+    "baseUrl": ".",
+    "paths": {
+      "@/components/*": [
+        "./src/components/*"
+      ],
+      "~/*": [
+        "./src/*"
+      ]
+    },
 
     /* Linting */
     "strict": true,
@@ -23,5 +44,12 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src"]
+  "include": [
+    "src",
+    "src/**/*.json",
+    "src/**/*.tsx",
+    "src/**/*.ts",
+    "src/**/*.mdx",
+    "src/types/*.d.ts"
+  ]
 }

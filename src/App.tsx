@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import {
   Routes,
   Route,
   Navigate,
   useParams,
-  useLocation,
 } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -25,8 +24,7 @@ const NotFoundPage = () => {
 };
 
 function App() {
-  const { t, i18n } = useTranslation();
-  const location = useLocation();
+  const { i18n } = useTranslation();
   const { lang } = useParams<{ lang: string }>(); // Get language parameter from URL
 
   // Effect to change i18n language when URL parameter changes
@@ -36,7 +34,8 @@ function App() {
     }
   }, [lang, i18n]);
 
-  const currentLang = location.pathname.split("/")[1] || i18n.language;
+// currentLang can be used for debugging or future features if needed
+// const currentLang = location.pathname.split("/")[1] || i18n.language;
 
   return (
     <>

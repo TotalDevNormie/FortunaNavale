@@ -1,25 +1,9 @@
 import { useTranslation } from "react-i18next";
 import WavyContainer from "~/components/WavyConatiner";
-import { Button } from "~/components/ui/button";
-import { Plus } from "lucide-react";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "~/components/ui/popover";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import Heading from "~/components/Heading";
 
-interface ServiceSection {
-  title: string;
-  content: string;
-  list: string[];
-}
-
-interface ContactPerson {
-  name: string;
-  position: string;
-}
+// These interfaces will be used when implementing future features
 
 interface Reason {
   title: string;
@@ -47,7 +31,7 @@ export default function Home() {
     returnObjects: true,
   }) as Reason[];
 
-  https: return (
+  return (
     <div className="">
       <Heading image="https://drive.google.com/thumbnail?id=1hM4m1F2jY0ZSouWQYhYb1Ylpu6WJV-5A&sz=w1500">
         {t("page.about.title")}
@@ -79,13 +63,13 @@ export default function Home() {
       <WavyContainer secondary className="flex flex-col gap-8">
         <div className="flex flex-col gap-12">
           {Array.isArray(ourMission) &&
-            ourMission.map((mission, index) => (
-              <>
+            ourMission.map((mission) => (
+              <div key={mission.title}>
                 <h2 className="font-bold text-accent-100 uppercase font-mono text-2xl">
                   {mission.title}
                 </h2>
                 <p className="ml-8">{mission.content}</p>
-              </>
+              </div>
             ))}
         </div>
       </WavyContainer>

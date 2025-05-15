@@ -1,23 +1,24 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react"; // Remove default React import
 import { useParams, Outlet, useNavigate } from "react-router-dom";
-import i18n from "../../i18n";
+import i18n from "~/i18n";
 import { useTranslation } from "react-i18next";
 
-interface I18nWrapperProps {
-  children: React.ReactNode;
-}
-
-const I18nWrapper: React.FC<I18nWrapperProps> = ({ children }) => {
+// No props needed since we're using Outlet
+const I18nWrapper = () => {
   const { lang } = useParams<{ lang?: string }>();
   const navigate = useNavigate();
   const { i18n: i18nInstance } = useTranslation();
 
   useEffect(() => {
     const setLanguage = async () => {
-      let language = lang || i18nInstance.language || i18n.options.fallbackLng;
-
-      if (!i18n.options.supportedLngs?.includes(language)) {
-        language = i18n.options.fallbackLng as string;
+      // Get supported languages array safely
+      const supportedLngs = i18n.options.supportedLngs as string[] | undefined;
+      let language = lang || i18nInstance.language;
+      
+      // Ensure language is a string and is supported
+      if (!language || !supportedLngs?.includes(language)) {
+        // Get fallback language as string
+        language = (i18n.options.fallbackLng as string) || 'en';
         navigate(`/${language}`, { replace: true }); // Redirect to default lang
       }
 

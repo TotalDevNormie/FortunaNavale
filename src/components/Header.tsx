@@ -1,6 +1,6 @@
-import { Link, useLocation, useNavigate, useParams } from "react-router"; // Use react-router-dom
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Globe } from "lucide-react"; // Using Globe icon for language
+// Globe icon removed - not being used
 import { supportedLngs } from "~/i18n";
 import LogoFull from "~/assets/logo-full.svg";
 import Shape from "~/assets/header-shape.svg";
@@ -17,9 +17,8 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  navigationMenuTriggerStyle,
 } from "./ui/navigation-menu";
-import { use } from "react";
+// use import removed - not being used
 
 // Define your supported languages (centralize this in a config file ideally)
 
@@ -37,7 +36,7 @@ export default function Header() {
     params.lang || (i18n.resolvedLanguage as string) || "en"; // More robust fallback
 
   const currentLanguage = supportedLngs.find(
-    (lang) => lang === currentLangCode
+    (lang: string) => lang === currentLangCode
   );
 
   const currentPage = location.pathname.split('/').pop() || "home";
@@ -99,7 +98,7 @@ export default function Header() {
               </SelectValue>
             </SelectTrigger>
             <SelectContent className="w-[5rem]">
-              {supportedLngs.map((lang) => (
+              {supportedLngs.map((lang: string) => (
                 <SelectItem key={lang} value={lang} className="uppercase">
                   {lang}
                 </SelectItem>
