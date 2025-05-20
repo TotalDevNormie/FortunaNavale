@@ -12,11 +12,12 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": false,
+    "noEmit": true,
     "composite": true,
     "declaration": true,
     "declarationMap": true,
-    "emitDeclarationOnly": true,
+    "emitDeclarationOnly": false,
+    "declarationDir": "./dist",
     "outDir": "./dist",
     "rootDir": "./src",
     "jsx": "react-jsx",
@@ -36,6 +37,10 @@
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.json"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
   ],
   "references": [] 
 }
