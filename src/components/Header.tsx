@@ -46,7 +46,7 @@ export default function Header() {
       const pathSegments = currentPath
         .split("/")
         .filter((segment) => segment !== ""); // Split and remove empty strings
-      const currentLangSegment = pathSegments[0]; // The first segment should be the language
+      // First segment is the language code
 
       let restOfPath = "";
       if (pathSegments.length > 1) {

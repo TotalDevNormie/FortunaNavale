@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Link, Navigate, redirect, useNavigate, useParams } from "react-router";
+import { Navigate, useNavigate, useParams } from "react-router";
 import Heading from "~/components/Heading";
 import WavyContainer from "~/components/WavyConatiner";
 import { JobTranslation } from "./vacancies";

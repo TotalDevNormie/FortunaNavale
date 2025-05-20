@@ -12,7 +12,13 @@
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false,
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "strict": true,
@@ -27,7 +33,9 @@
     }
   },
   "include": [
-    "src"
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.json"
   ],
-  "references": [] // Add references if you have multiple tsconfig files (e.g., for testing)
+  "references": [] 
 }

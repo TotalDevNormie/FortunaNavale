@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import { Link, useParams } from "react-router";
-import { supportedLngs } from "~/i18n";
 
 export default function NotFound() {
   const { i18n, t } = useTranslation();
@@ -8,10 +7,6 @@ export default function NotFound() {
 
   const currentLangCode =
     params.lang || (i18n.resolvedLanguage as string) || "en";
-
-  const currentLanguage = supportedLngs.find(
-    (lang: string) => lang === currentLangCode
-  );
   return (
     <div
       className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat"
