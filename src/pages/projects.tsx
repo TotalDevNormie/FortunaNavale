@@ -16,7 +16,7 @@ export default function Projects() {
         {t("page.projects.title")}
       </Heading>
 
-      <WavyContainer end className="grid grid-cols-2 gap-8 pb-16">
+      <WavyContainer end className="grid md:grid-cols-2 gap-8 pb-16">
         {projects.map((project, index) => (
           <div
             key={index}

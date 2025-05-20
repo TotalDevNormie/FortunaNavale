@@ -1,8 +1,6 @@
 {
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2020",
-    "useDefineForClassFields": true,
     "lib": [
       "ES2020",
       "DOM",
@@ -10,48 +8,26 @@
     ],
     "module": "ESNext",
     "skipLibCheck": true,
-    /* Bundler mode */
     "moduleResolution": "bundler",
-    "emitDeclarationOnly": true,
     "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
-    "moduleDetection": "force",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react",
-    "types": [
-      "react/jsx-runtime"
-    ],
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    /* For declaration files */
-    "composite": true,
-    "declaration": true,
-    "declarationMap": true,
-    "outDir": "./dist",
-    /* Path aliases */
-    "baseUrl": ".",
-    "paths": {
-      "@/components/*": [
-        "./src/components/*"
-      ],
-      "~/*": [
-        "./src/*"
-      ]
-    },
-    /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./src/*"
+      ]
+    }
   },
   "include": [
-    "src",
-    "src/**/*.json",
-    "src/**/*.tsx",
-    "src/**/*.ts",
-    "src/**/*.mdx",
-    "src/types/*.d.ts"
-  ]
+    "src"
+  ],
+  "references": [] // Add references if you have multiple tsconfig files (e.g., for testing)
 }

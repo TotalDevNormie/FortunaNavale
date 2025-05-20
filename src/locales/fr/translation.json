@@ -2,101 +2,361 @@
   "page": {
     "home": {
       "title": {
-        "highlight": "INNOVANT",
+        "highlight": "INNOVANTES",
         "middle": "Solutions",
-        "lowlight": "dans la construction navale"
+        "lowlight": "En construction navale"
       },
       "aboutUs": {
-        "title": "À propos de l'entreprise",
+        "title": "À PROPOS DE NOUS",
         "content": [
-          "Fortuna Navale est un fournisseur leader de personnel qualifié pour des projets dans la construction, la construction navale, l'industrie et d'autres secteurs.",
-          "Nous sommes spécialisés dans la fourniture de solutions de dotation flexibles adaptées aux besoins de nos clients, des projets à court terme avec un petit nombre de spécialistes aux contrats à long terme avec des équipes allant jusqu'à 60 personnes."
+          "Fortuna Navale est un fournisseur leader de personnel qualifié pour les projets de construction, de construction navale, d'industrie et d'autres secteurs.",
+          "Nous nous spécialisons dans la fourniture de solutions de personnel flexibles adaptées aux besoins de nos clients, des projets à court terme avec un petit nombre de spécialistes aux contrats à long terme avec des équipes allant jusqu'à 60 personnes."
         ]
       },
       "services": {
-        "title": "Services",
+        "title": "SERVICES",
         "sections": [
           {
-            "title": "Soudage",
-            "highlight": "OZ",
-            "content": [
-              "Nous fournissons des spécialistes certifiés dans les types de soudage suivants :",
-              "MIG (131), MAG (135, 136), MMA, TIG (141), Soudage au gaz",
-              "Nos soudeurs sont conformes à la norme ISO 9606-1 et possèdent une expérience de travail en atelier et dans les installations industrielles."
+            "title": "Soudure",
+            "content": "Nous fournissons des spécialistes certifiés pour les types de soudure suivants:",
+            "list": [
+              "MIG (131), MAG (135, 136), MMA, TIG (141), Soudure au gaz",
+              "Nos soudeurs sont conformes à la norme ISO 9606-1 et possèdent une expérience de travail en atelier et sur sites industriels."
             ]
           },
           {
             "title": "Isolation",
-            "content": [
-              "Nous offrons des solutions complètes pour l'isolation thermique, cryogénique, phonique et acoustique, y compris :",
-              "Traitement des canalisations, réservoirs, navires et installations industrielles",
-              "Application de matériaux et technologies modernes dans les industries pétrolières et gazières, chimiques et autres"
+            "content": "Nous offrons des solutions complètes pour l'isolation thermique, cryogénique, phonique et acoustique, y compris:",
+            "list": [
+              "Traitement des pipelines, réservoirs, navires et installations industrielles",
+              "Application de matériaux et technologies modernes dans les industries pétrolière et gazière, chimique et autres."
             ]
           },
           {
             "title": "Installation d'équipements industriels",
-            "content": [
-              "Nos spécialistes possèdent une expertise en :",
+            "content": "Nos spécialistes ont une expertise dans:",
+            "list": [
               "Démontage, transport et installation d'équipements lourds.",
-              "Préparation des fondations, alignement et mise en service des installations."
+              "Préparation des fondations, nivellement et mise en service des installations."
             ]
           },
           {
             "title": "Peinture et protection de surface",
-            "content": [
-              "Nous effectuons :",
-              "La peinture de grandes structures métalliques à l'aide de matériaux modernes.",
-              "Le sablage pour éliminer la vieille peinture et la corrosion.",
-              "L'application de revêtements protecteurs pour la durabilité et le contrôle de la corrosion."
-            ]
-          },
-          {
-            "title": "Préparation professionnelle et pose de chemins de câbles sur un navire",
-            "content": [
-              "Préparation professionnelle et pose de chemins de câbles sur un navire, y compris la conception, l'installation et les essais conformément aux normes internationales"
+            "content": "Nous réalisons:",
+            "list": [
+              "Peinture de grandes structures métalliques à l'aide de matériaux modernes.",
+              "Sablage pour enlever la vieille peinture et la corrosion.",
+              "Application de revêtements protecteurs pour la durabilité et le contrôle de la corrosion."
             ]
           }
         ]
       },
       "projects": {
-        "title": "Projets"
-      },
-      "contact": {
-        "title": "Contact",
-        "people": [
+        "title": "Projets",
+        "aboutUs": {
+          "title": "À propos de nous",
+          "content": [
+            "Fortuna Navale est un fournisseur leader de personnel qualifié pour les projets de construction, de construction navale, d'industrie et d'autres secteurs.",
+            "Nous nous spécialisons dans la fourniture de solutions de personnel flexibles adaptées aux besoins de nos clients, des projets à court terme avec un petit nombre de spécialistes aux contrats à long terme avec des équipes allant jusqu'à 60 personnes."
+          ]
+        },
+        "sections": [
           {
-            "name": "Angelina Vinnicenko",
-            "position": "Assistante de direction"
+            "image": "https://drive.google.com/thumbnail?id=1BhNdp0CcOw-TUCX04yW5L6qbmolvAQR1&sz=w1000",
+            "content": "Préparation professionnelle et pose de chemins de câbles sur un navire, y compris la conception, l'installation et les essais conformément aux normes internationales."
           },
           {
-            "name": "Dmitrijs Mihailovs",
-            "position": "Assistant de direction"
+            "image": "https://drive.google.com/thumbnail?id=1RPo66WqxHqwzuAKbjbpmn7VedmmaifIB&sz=w1000",
+            "content": "Sur cette plateforme d'installation d'éoliennes, notre équipe a réussi à accomplir plusieurs tâches clés, notamment le soudage de garde-corps, l'installation de ponts, l'installation de filets de protection contre les oiseaux, ainsi que d'autres travaux techniques tels que la pose de câbles, l'installation d'équipements et la configuration de systèmes."
           },
           {
-            "name": "Siarhejka Siarhei",
-            "position": "Directeur technique"
-          },
-          {
-            "name": "Sergejs Sklarovs",
-            "position": "Directeur"
+            "image": "https://drive.google.com/thumbnail?id=1Ib9rDw0hWk0iDu9MzuKYLXTs_8WZsqbZ&sz=w1000",
+            "content": "Installation et mise en service du moteur principal sur un navire, y compris le montage, la configuration et l'intégration avec les systèmes du navire."
           }
         ]
       },
-      "footer": {
-        "copyright": "© 2024 Fortuna Navale"
+      "partners": {
+        "title": "Partenaires"
+      },
+      "map": {
+        "title": "Nous sommes à..."
       }
     },
-    "menu": {
-      "home": "Accueil",
-      "aboutUs": "À propos",
-      "services": "Services",
-      "projects": "Projets",
-      "vacancies": "Offres d'emploi",
-      "contact": "Contact"
+    "about": {
+      "title": "À Propos de Nous",
+      "aboutUs": {
+        "title": "À PROPOS DE NOUS",
+        "content": [
+          "Fortuna Navale est un fournisseur leader de personnel qualifié pour les projets de construction, de construction navale, d'industrie et d'autres secteurs.",
+          "Nous nous spécialisons dans la fourniture de solutions de personnel flexibles adaptées aux besoins de nos clients, des projets à court terme avec un petit nombre de spécialistes aux contrats à long terme avec des équipes allant jusqu'à 60 personnes."
+        ]
+      },
+      "ourMission": [
+        {
+          "title": "Notre Mission",
+          "content": "Fournir à nos clients un personnel hautement qualifié capable de résoudre les tâches les plus complexes tout en respectant les normes de qualité et de sécurité les plus élevées. Nous nous efforçons de devenir un partenaire fiable qui aide les entreprises à se concentrer sur leurs processus d'affaires clés en prenant en charge tous les aspects du recrutement, de l'organisation et de la gestion du personnel."
+        },
+        {
+          "title": "Objectif de Développement",
+          "content": "Pour atteindre nos objectifs ambitieux, nous développons activement notre équipe de réparation navale. Nous recherchons des employés talentueux, motivés et professionnels qui partagent nos valeurs et sont prêts à faire partie d'une équipe capable de résoudre les tâches les plus complexes."
+        },
+        {
+          "title": "Notre Vision",
+          "content": "Nous aspirons à devenir un leader dans le domaine des solutions de personnel en Europe, en établissant des partenariats à long terme avec nos clients. Notre objectif est de fournir des services de la plus haute qualité qui aident nos clients à atteindre leurs objectifs stratégiques, tout en étant confiants dans la fiabilité et le professionnalisme de notre équipe."
+        }
+      ],
+      "whyChooseUs": {
+        "title": "Pourquoi nous choisir?",
+        "joinUs": "Rejoignez-nous!",
+        "content": "Fortuna Navale est une équipe de professionnels prête à devenir votre partenaire fiable pour la réalisation des projets les plus ambitieux. Contactez-nous pour discuter de vos tâches et trouver la solution optimale!",
+        "cta": "Voir les offres d'emploi",
+        "sections": [
+          {
+            "title": "Réactivité",
+            "image": "https://drive.google.com/thumbnail?id=1riEM2yy6VOhwa3OMv5n7r547dCCNhJLT&sz=w1000",
+            "content": "Nous fournissons les ressources nécessaires à vos projets dans les plus brefs délais, en minimisant les temps d'arrêt et les retards."
+          },
+          {
+            "title": "Qualifications",
+            "image": "https://drive.google.com/thumbnail?id=1D2Ed4IjCwAkwvMdTequrDbzFb9gFHSyS&sz=w1000",
+            "content": "Tous nos employés possèdent les certificats pertinents, une expérience professionnelle confirmée et suivent régulièrement des formations pour maintenir un haut niveau de professionnalisme."
+          },
+          {
+            "title": "Flexibilité",
+            "image": "https://drive.google.com/thumbnail?id=1Q7NjvZ2FryAf37QwI5VQ38d5UTIGQ7NU&sz=w1000",
+            "content": "Nous offrons des conditions de coopération adaptatives, vous permettant de démarrer, de suspendre ou de reprendre le travail avec nous à tout moment."
+          },
+          {
+            "title": "Approche Intégrée",
+            "image": "https://drive.google.com/thumbnail?id=1UblnsnAX8CoXyFpgJiW1SA45wNV-gP_e&sz=w1000",
+            "content": "Nous prenons en charge toutes les étapes de l'interaction avec le personnel - du recrutement et de l'intégration à l'organisation du travail sur site et au contrôle de la qualité."
+          }
+        ]
+      }
     },
-    "buttons": {
-      "orderService": "Commander un service",
-      "more": "Plus"
+    "projects": {
+      "title": "Projets",
+      "content": [
+        "L'un des navires sur lequel les spécialistes de notre entreprise FortunaNavale ont réalisé des travaux mécaniques, depuis la phase de conception et de développement.",
+        "Développement et fabrication de structures de support spécialisées pour le moteur principal d'un paquebot de croisière.",
+        "Installation et mise en service du moteur principal sur un navire, y compris le montage, la configuration et l'intégration avec les systèmes du navire.",
+        "Nos soudeurs hautement qualifiés possèdent l'expérience nécessaire et sont prêts à exécuter même les projets et tâches les plus complexes, garantissant la plus haute qualité de travail.",
+        "Sur ce magnifique yacht, la réalisation du projet a été possible grâce au professionnalisme, aux efforts et à la contribution de nos employés, qui ont déployé des efforts considérables pour atteindre le résultat.",
+        "Nos installateurs expérimentés réalisent les travaux d'installation de filets de protection sur les plateformes, garantissant une haute qualité et le respect de toutes les normes techniques.",
+        "Préparation professionnelle et pose de chemins de câbles sur un navire, y compris la conception, l'installation et les essais conformément aux normes internationales.",
+        "Sur cette plateforme d'installation d'éoliennes, notre équipe a réussi à accomplir plusieurs tâches clés, notamment le soudage de garde-corps, l'installation de ponts, l'installation de filets de protection contre les oiseaux, ainsi que d'autres travaux techniques tels que la pose de câbles, l'installation d'équipements et la configuration de systèmes."
+      ]
+    },
+    "contact": {
+      "title": "Contacts",
+      "subtitle": "Laissez une demande!",
+      "content": "Vous serez contacté prochainement.",
+      "form": {
+        "name": "Nom",
+        "email": "E-mail",
+        "phone": "Numéro de téléphone",
+        "subject": "Sujet",
+        "message": "Message",
+        "message-description": "Écrivez votre message ici...",
+        "send": "Envoyer"
+      }
+    },
+    "vacancies": {
+      "title": "Offres d'emploi",
+      "title-single": "Rejoignez Fortuna Navale en tant que",
+      "open": "Ouvert",
+      "open-single": "Ouvert",
+      "search": "Rechercher",
+      "filters": {
+        "location": "Lieu",
+        "employmentType": "Type d'emploi",
+        "removeSelection": "Supprimer la sélection"
+      },
+      "vacancieNotFound": {
+        "title": "Vous n'avez pas trouvé d'offre d'emploi?",
+        "content": "Essayez de rechercher avec d'autres critères."
+      },
+      "didntFind": {
+        "title": "Vous n'avez pas trouvé l'offre d'emploi qui vous intéresse?",
+        "content": "Laissez vos coordonnées afin que nous puissions vous informer lorsqu'un poste sera ouvert."
+      },
+      "jobInterested": "Si cette offre d'emploi vous intéresse, remplissez le formulaire ci-dessous",
+      "info": {
+        "salary": "Salaire",
+        "bruto": "avant impôts",
+        "JobFormat": "Format de travail",
+        "jobType": "Emploi",
+        "experience": "Expérience professionnelle",
+        "responsibilities": "Responsabilités",
+        "requirements": "Exigences",
+        "advantages": "Sera un avantage",
+        "weOffer": "Nous offrons"
+      },
+      "form": {
+        "name": "Nom",
+        "email": "E-mail",
+        "cv": "Télécharger le CV",
+        "send": "Envoyer la candidature"
+      },
+      "cities": {
+        "Riga": "Riga",
+        "Gavr": "Le Havre",
+        "Nant": "Nant"
+      },
+      "countries": {
+        "Latvia": "Lettonie",
+        "France": "France"
+      },
+      "employmentType": {
+        "Full-time": "Temps plein",
+        "Part-time": "Temps partiel",
+        "Flexible": "Flexible"
+      },
+      "postings": {
+        "shipbuilder-1": {
+          "title": "Constructeur naval",
+          "excerpt": "Si vous avez de l'expérience dans les structures métalliques, l'assemblage et la réparation de navires, et le désir de travailler dans une entreprise stable, nous serons heureux de vous accueillir dans notre équipe.",
+          "jobFormat": "Sur place",
+          "experience": "Plus de 3 ans",
+          "responsibilities": [
+            "Assemblage, installation et réparation de coques de navires selon les dessins et la documentation technique.",
+            "Travail avec des structures métalliques, soudure, rivetage, étanchéité des joints.",
+            "Installation et essai des équipements du navire.",
+            "Interaction avec les ingénieurs et autres spécialistes pour le contrôle qualité des travaux.",
+            "Respect des règles de sécurité et des normes de construction navale."
+          ],
+          "requirements": [
+            "Expérience dans la construction navale à partir de 3 ans",
+            "Connaissance des technologies d'assemblage et de réparation de navires.",
+            "Maîtrise des outils et équipements (postes de soudure, découpe de métaux, etc.).",
+            "Lecture de dessins techniques et de schémas.",
+            "Endurance physique, sens des responsabilités et souci du détail.",
+            "Prêt à travailler dans les conditions du chantier naval (ateliers ouverts et fermés, plans d'eau)."
+          ],
+          "advantages": [
+            "Diplôme dans le domaine [construction navale, génie mécanique, métallurgie].",
+            "Expérience avec les technologies de construction navale modernes.",
+            "Compétences en soudure et travail avec l'hydraulique."
+          ],
+          "weOffer": [
+            "Emploi officiel et salaire stable.",
+            "Opportunités d'évolution de carrière et de formation.",
+            "Travail dans une grande entreprise de construction navale avec des équipements modernes.",
+            "Équipe conviviale et conditions de travail sûres."
+          ]
+        },
+        "ship-electrician-1": {
+          "title": "Électricien naval",
+          "excerpt": "Si vous avez de l'expérience dans l'installation, le diagnostic et la réparation des systèmes électriques des navires, et le désir de travailler dans une entreprise stable, nous serons heureux de vous accueillir dans notre équipe.",
+          "jobFormat": "Sur place",
+          "experience": "Plus de 3 ans",
+          "responsibilities": [
+            "Assemblage, installation et réparation de coques de navires selon les dessins et la documentation technique.",
+            "Travail avec des structures métalliques, soudure, rivetage, étanchéité des joints.",
+            "Installation et essai des équipements du navire.",
+            "Interaction avec les ingénieurs et autres spécialistes pour le contrôle qualité des travaux.",
+            "Respect des règles de sécurité et des normes de construction navale."
+          ],
+          "requirements": [
+            "Expérience dans la construction navale à partir de 3 ans",
+            "Connaissance des technologies d'assemblage et de réparation de navires.",
+            "Maîtrise des outils et équipements (postes de soudure, découpe de métaux, etc.).",
+            "Lecture de dessins techniques et de schémas.",
+            "Endurance physique, sens des responsabilités et souci du détail.",
+            "Prêt à travailler dans les conditions du chantier naval (ateliers ouverts et fermés, plans d'eau)."
+          ],
+          "advantages": [
+            "Diplôme dans le domaine [construction navale, génie mécanique, métallurgie].",
+            "Expérience avec les technologies de construction navale modernes.",
+            "Compétences en soudure et travail avec l'hydraulique."
+          ],
+          "weOffer": [
+            "Emploi officiel et salaire stable.",
+            "Opportunités d'évolution de carrière et de formation.",
+            "Travail dans une grande entreprise de construction navale avec des équipements modernes.",
+            "Équipe conviviale et conditions de travail sûres."
+          ]
+        },
+        "ship-electrician-2": {
+          "title": "Électricien naval",
+          "excerpt": "Si vous avez de l'expérience dans l'installation, le diagnostic et la réparation des systèmes électriques des navires, et le désir de travailler dans une entreprise stable, nous serons heureux de vous accueillir dans notre équipe.",
+          "jobFormat": "Sur place",
+          "experience": "Plus de 3 ans",
+          "responsibilities": [
+            "Assemblage, installation et réparation de coques de navires selon les dessins et la documentation technique.",
+            "Travail avec des structures métalliques, soudure, rivetage, étanchéité des joints.",
+            "Installation et essai des équipements du navire.",
+            "Interaction avec les ingénieurs et autres spécialistes pour le contrôle qualité des travaux.",
+            "Respect des règles de sécurité et des normes de construction navale."
+          ],
+          "requirements": [
+            "Expérience dans la construction navale à partir de 3 ans",
+            "Connaissance des technologies d'assemblage et de réparation de navires.",
+            "Maîtrise des outils et équipements (postes de soudure, découpe de métaux, etc.).",
+            "Lecture de dessins techniques et de schémas.",
+            "Endurance physique, sens des responsabilités et souci du détail.",
+            "Prêt à travailler dans les conditions du chantier naval (ateliers ouverts et fermés, plans d'eau)."
+          ],
+          "advantages": [
+            "Diplôme dans le domaine [construction navale, génie mécanique, métallurgie].",
+            "Expérience avec les technologies de construction navale modernes.",
+            "Compétences en soudure et travail avec l'hydraulique."
+          ],
+          "weOffer": [
+            "Emploi officiel et salaire stable.",
+            "Opportunités d'évolution de carrière et de formation.",
+            "Travail dans une grande entreprise de construction navale avec des équipements modernes.",
+            "Équipe conviviale et conditions de travail sûres."
+          ]
+        }
+      }
     }
+  },
+  "contact": {
+    "title": "CONTACTS",
+    "people": [
+      {
+        "name": "Angelina Vinnicenko",
+        "position": "Assistante de Direction",
+        "email": "angelina.vinnicenko@fortunanaval.com",
+        "phone": "+33 6 22 35 19 05"
+      },
+      {
+        "name": "Dmitrijs Mihailovs",
+        "position": "Assistante de Direction",
+        "email": "dmitry.mihailovs@fortunanaval.com",
+        "phone": "+371 28225035"
+      },
+      {
+        "name": "Siarmiakja Siarhuei",
+        "position": "Directeur Technique",
+        "email": "siarmiakja@gmail.com",
+        "phone": "+33 6 65 26 31 09"
+      },
+      {
+        "name": "Sergejs Sklarovs",
+        "position": "Directeur",
+        "email": "fortuna.naval@gmail.com",
+        "phone": "+33 6 26 55 03 40"
+      }
+    ]
+  },
+  "menu": {
+    "home": "Accueil",
+    "about": "À propos de nous",
+    "services": "Services",
+    "projects": "Projets",
+    "vacancies": "Offres d'emploi",
+    "contact": "Contacts"
+  },
+  "buttons": {
+    "orderService": "Commander un service",
+    "more": "En savoir plus",
+    "sendForm": "Envoyer le formulaire"
+  },
+  "notFound": {
+    "title": "Nous sommes en construction!",
+    "subtitle": "veuillez patienter sur la",
+    "page": "page d'accueil"
   }
 }

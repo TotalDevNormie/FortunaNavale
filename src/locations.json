@@ -1,0 +1,29 @@
+[
+  {
+    "country": "Latvia",
+    "position": [45, 55],
+    "cities": [
+      {
+        "name": "Riga",
+        "email": "fortunanavele.@gmail.com",
+        "phone": "+37127142967000"
+      }
+    ]
+  },
+  {
+    "country": "France",
+    "position": [50, 25],
+    "cities": [
+      {
+        "name": "Gavr",
+        "email": "fortunanavele.fr@gmail.com",
+        "phone": "+0033142967000"
+      },
+      {
+        "name": "Nant",
+        "email": "fortunanavele.fr@gmail.com",
+        "phone": "+0033142967000"
+      }
+    ]
+  }
+]

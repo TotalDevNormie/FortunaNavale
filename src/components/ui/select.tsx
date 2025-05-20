@@ -42,7 +42,7 @@ function SelectTrigger({
     >
       {children}
       <SelectPrimitive.Icon asChild>
-        <ChevronDownIcon className="size-4 stroke-white" />
+        <ChevronDownIcon className="text-inherit size-6" />
       </SelectPrimitive.Icon>
     </SelectPrimitive.Trigger>
   );

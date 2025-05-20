@@ -26,7 +26,9 @@ export default function WavyContainer({
           : "after:content-[''] after:bg-[url(/wave-2.svg)] after:w-full after:h-28 after:absolute after:bottom-0 after:translate-y-full after:z-10 after:bg-no-repeat after:bg-size-[100%_100%]"
       }`}
     >
-      <div className={cn("w-fit-container", className)}>{children}</div>
+      <div className="mx-8">
+        <div className={cn("w-fit-container", className)}>{children}</div>
+      </div>
     </div>
   );
 }

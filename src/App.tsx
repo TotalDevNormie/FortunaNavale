@@ -1,11 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, type ReactNode } from "react";
 import { useTranslation } from "react-i18next";
-import {
-  Routes,
-  Route,
-  Navigate,
-  useParams,
-} from "react-router-dom";
+import { Routes, Route, Navigate, useParams } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "~/app.css";
@@ -13,15 +8,17 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Projects from "./pages/projects";
 import Contact from "./pages/contact";
+import NotFound from "./components/NotFound";
+import Vacancies from "./pages/vacancies";
+import Vacancie from "./pages/vacancie";
 
-const NotFoundPage = () => {
-  return (
-    <div>
-      <h1>404 Not Found</h1>
-      <p>The page you are looking for does not exist.</p>
-    </div>
-  );
-};
+const LayoutWrapper = ({ children }: { children: ReactNode }) => (
+  <>
+    <Header />
+    <main>{children}</main>
+    <Footer />
+  </>
+);
 
 function App() {
   const { i18n } = useTranslation();
@@ -34,31 +31,66 @@ function App() {
     }
   }, [lang, i18n]);
 
-// currentLang can be used for debugging or future features if needed
-// const currentLang = location.pathname.split("/")[1] || i18n.language;
-
   return (
-    <>
-      <Header />
-      <main>
-        <Routes>
-          {/* Redirect from root to default language */}
-          <Route
-            path="/"
-            element={<Navigate to={`/${i18n.language}/`} replace />}
-          />
-          {/* Routes with language parameter */}
-          <Route path="/:lang/" element={<Home />} />
-          <Route path="/:lang/about" element={<About />} />
-          <Route path="/:lang/projects" element={<Projects />} />
-          <Route path="/:lang/contact" element={<Contact />} />
+    <Routes>
+      {/* Redirect from root to default language */}
+      <Route
+        path="/"
+        element={<Navigate to={`/${i18n.language}/`} replace />}
+      />
+      {/* Routes with language parameter */}
+      <Route
+        path="/:lang/"
+        element={
+          <LayoutWrapper>
+            <Home />
+          </LayoutWrapper>
+        }
+      />
+      <Route
+        path="/:lang/about"
+        element={
+          <LayoutWrapper>
+            <About />
+          </LayoutWrapper>
+        }
+      />
+      <Route
+        path="/:lang/projects"
+        element={
+          <LayoutWrapper>
+            <Projects />
+          </LayoutWrapper>
+        }
+      />
+      <Route
+        path="/:lang/vacancies"
+        element={
+          <LayoutWrapper>
+            <Vacancies />
+          </LayoutWrapper>
+        }
+      />
+      <Route
+        path="/:lang/vacancies/:jobId"
+        element={
+          <LayoutWrapper>
+            <Vacancie />
+          </LayoutWrapper>
+        }
+      />
+      <Route
+        path="/:lang/contact"
+        element={
+          <LayoutWrapper>
+            <Contact />
+          </LayoutWrapper>
+        }
+      />
 
-          {/* Catch-all route for 404 */}
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
-      </main>
-      <Footer />
-    </>
+      {/* Catch-all route for 404 */}
+      <Route path="/:lang/*" element={<NotFound />} />
+    </Routes>
   );
 }
 

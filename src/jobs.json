@@ -1,0 +1,32 @@
+[
+  {
+    "id": "shipbuilder-1",
+    "title": "Shipbuilder",
+    "country": "Latvia",
+    "city": "Riga",
+    "employmentType": "Full-time",
+    "salaryBruto": "2000-3000",
+    "salaryCurency": "EUR",
+    "datePosted": "10.04.2025"
+  },
+  {
+    "id": "ship-electrician-1",
+    "title": "Ship electrician",
+    "country": "France",
+    "city": "Gavr",
+    "employmentType": "Full-time",
+    "salaryBruto": "2000-3000",
+    "salaryCurency": "EUR",
+    "datePosted": "10.04.2025"
+  },
+  {
+    "id": "ship-electrician-2",
+    "title": "Ship electrician",
+    "country": "France",
+    "city": "Gavr",
+    "employmentType": "Full-time",
+    "salaryBruto": "2000-3000",
+    "salaryCurency": "EUR",
+    "datePosted": "10.04.2025"
+  }
+]

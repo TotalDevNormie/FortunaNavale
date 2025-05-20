@@ -4,99 +4,359 @@
       "title": {
         "highlight": "INNOVATIVE",
         "middle": "Solutions",
-        "lowlight": "in Shipbuilding"
+        "lowlight": "In Shipbuilding"
       },
       "aboutUs": {
-        "title": "About Company",
+        "title": "ABOUT US",
         "content": [
-          "Fortuna Navale is a leading provider of qualified personnel for projects in construction, shipbuilding, industry and other sectors.",
+          "Fortuna Navale is a leading provider of qualified personnel for projects in construction, shipbuilding, industry, and other sectors.",
           "We specialize in providing flexible staffing solutions tailored to our clients' needs, from short-term projects with a small number of specialists to long-term contracts with teams of up to 60 people."
         ]
       },
       "services": {
-        "title": "Services",
+        "title": "SERVICES",
         "sections": [
           {
             "title": "Welding",
-            "highlight": "OZ",
-            "content": [
-              "We provide certified specialists in the following types of welding:",
+            "content": "We provide certified specialists for the following types of welding:",
+            "list": [
               "MIG (131), MAG (135, 136), MMA, TIG (141), Gas welding",
-              "Our welders comply with the ISO 9606-1 standard and have experience working in workshops and industrial facilities."
+              "Our welders comply with the ISO 9606-1 standard and have experience working both in workshops and on industrial sites."
             ]
           },
           {
             "title": "Insulation",
-            "content": [
-              "We offer comprehensive solutions for thermal, cryogenic, sound and acoustic insulation, including:",
-              "Processing of pipelines, tanks, vessels and industrial facilities",
-              "Application of modern materials and technologies in the oil and gas, chemical and other industries"
+            "content": "We offer comprehensive solutions for thermal, cryogenic, sound, and acoustic insulation, including:",
+            "list": [
+              "Processing of pipelines, tanks, vessels, and industrial facilities",
+              "Application of modern materials and technologies in the oil and gas, chemical, and other industries."
             ]
           },
           {
             "title": "Installation of industrial equipment",
-            "content": [
-              "Our specialists have expertise in:",
-              "Dismantling, transportation and installation of heavy equipment.",
-              "Preparation of foundations, alignment and commissioning of facilities."
+            "content": "Our specialists have expertise in:",
+            "list": [
+              "Disassembly, transportation, and installation of heavy equipment.",
+              "Foundation preparation, leveling, and commissioning of facilities."
             ]
           },
           {
             "title": "Painting and surface protection",
-            "content": [
-              "We perform:",
+            "content": "We perform:",
+            "list": [
               "Painting of large metal structures using modern materials.",
               "Sandblasting to remove old paint and corrosion.",
               "Application of protective coatings for durability and corrosion control."
-            ]
-          },
-          {
-            "title": "Professional preparation and laying of cable routes on a ship",
-            "content": [
-              "Professional preparation and laying of cable routes on a ship, including design, installation and testing in accordance with international standards"
             ]
           }
         ]
       },
       "projects": {
-        "title": "Projects"
-      },
-      "contact": {
-        "title": "Contact",
-        "people": [
+        "title": "Projects",
+        "aboutUs": {
+          "title": "About Us",
+          "content": [
+            "Fortuna Navale is a leading provider of qualified personnel for projects in construction, shipbuilding, industry, and other sectors.",
+            "We specialize in providing flexible staffing solutions tailored to our clients' needs, from short-term projects with a small number of specialists to long-term contracts with teams of up to 60 people."
+          ]
+        },
+        "sections": [
           {
-            "name": "Angelina Vinnicenko",
-            "position": "Assistant Manager"
+            "image": "https://drive.google.com/thumbnail?id=1BhNdp0CcOw-TUCX04yW5L6qbmolvAQR1&sz=w1000",
+            "content": "Professional preparation and laying of cable routes on a vessel, including design, installation, and testing in accordance with international standards."
           },
           {
-            "name": "Dmitrijs Mihailovs",
-            "position": "Assistant Manager"
+            "image": "https://drive.google.com/thumbnail?id=1RPo66WqxHqwzuAKbjbpmn7VedmmaifIB&sz=w1000",
+            "content": "On this platform for wind turbine installation, our team successfully completed a number of key tasks, including welding handrails, installing decks, installing bird protection nets, as well as carrying out other technical work such as laying cables, installing equipment, and setting up systems."
           },
           {
-            "name": "Siarhejka Siarhei",
-            "position": "Technical Director"
-          },
-          {
-            "name": "Sergejs Sklarovs",
-            "position": "Director"
+            "image": "https://drive.google.com/thumbnail?id=1Ib9rDw0hWk0iDu9MzuKYLXTs_8WZsqbZ&sz=w1000",
+            "content": "Installation and commissioning of the main engine on a vessel, including mounting, configuration, and integration with ship systems."
           }
         ]
       },
-      "footer": {
-        "copyright": "© 2024 Fortuna Navale"
+      "partners": {
+        "title": "Partners"
+      },
+      "map": {
+        "title": "We are in..."
       }
     },
-    "menu": {
-      "home": "Home",
-      "aboutUs": "About Us",
-      "services": "Services",
-      "projects": "Projects",
-      "vacancies": "Vacancies",
-      "contact": "Contact"
+    "about": {
+      "title": "About Us",
+      "aboutUs": {
+        "title": "ABOUT US",
+        "content": [
+          "Fortuna Navale is a leading provider of qualified personnel for projects in construction, shipbuilding, industry, and other sectors.",
+          "We specialize in providing flexible staffing solutions tailored to our clients' needs, from short-term projects with a small number of specialists to long-term contracts with teams of up to 60 people."
+        ]
+      },
+      "ourMission": [
+        {
+          "title": "Our Mission",
+          "content": "To provide clients with highly qualified personnel who are capable of solving the most complex tasks while maintaining the highest standards of quality and safety. We strive to become a reliable partner that helps companies focus on their core business processes by taking on all aspects of personnel recruitment, organization, and management."
+        },
+        {
+          "title": "Development Goal",
+          "content": "To achieve our ambitious goals, we are actively developing our ship repair team. We are looking for talented, motivated, and professional employees who share our values and are ready to become part of a team capable of solving the most complex tasks."
+        },
+        {
+          "title": "Our Vision",
+          "content": "We strive to become a leader in staffing solutions in Europe, establishing long-term partnerships with clients. Our goal is to provide services of the highest quality that help our clients achieve their strategic goals while being confident in the reliability and professionalism of our team."
+        }
+      ],
+      "whyChooseUs": {
+        "title": "Why Choose Us?",
+        "joinUs": "Join Us!",
+        "content": "Fortuna Navale is a team of professionals ready to become your reliable partner in realizing the most ambitious projects. Contact us to discuss your tasks and find the optimal solution!",
+        "cta": "View Vacancies",
+        "sections": [
+          {
+            "title": "Efficiency",
+            "image": "https://drive.google.com/thumbnail?id=1riEM2yy6VOhwa3OMv5n7r547dCCNhJLT&sz=w1000",
+            "content": "We provide the necessary resources for your projects in the shortest possible time, minimizing downtime and delays."
+          },
+          {
+            "title": "Qualifications",
+            "image": "https://drive.google.com/thumbnail?id=1D2Ed4IjCwAkwvMdTequrDbzFb9gFHSyS&sz=w1000",
+            "content": "All our employees have relevant certificates, confirmed work experience, and regularly undergo training to maintain a high level of professionalism."
+          },
+          {
+            "title": "Flexibility",
+            "image": "https://drive.google.com/thumbnail?id=1Q7NjvZ2FryAf37QwI5VQ38d5UTIGQ7NU&sz=w1000",
+            "content": "We offer adaptive cooperation conditions, allowing you to start, pause, or resume working with us at any time."
+          },
+          {
+            "title": "Integrated Approach",
+            "image": "https://drive.google.com/thumbnail?id=1UblnsnAX8CoXyFpgJiW1SA45wNV-gP_e&sz=w1000",
+            "content": "We take on all stages of personnel interaction — from selection and onboarding to organizing work on-site and quality control."
+          }
+        ]
+      }
     },
-    "buttons": {
-      "orderService": "Order service",
-      "more": "More"
+    "projects": {
+      "title": "Projects",
+      "content": [
+        "One of the vessels where mechanical works were performed by our company's specialists at FortunaNavale, starting from the design and development stage.",
+        "Development and manufacturing of specialized support structures for the main engine of a cruise liner.",
+        "Installation and commissioning of the main engine on a vessel, including mounting, configuration, and integration with ship systems.",
+        "Our highly qualified welders have the necessary experience and are ready to execute even the most complex projects and tasks, ensuring the highest quality of work.",
+        "On this magnificent yacht, the project's realization was made possible thanks to the professionalism, efforts, and contribution of our employees, who made significant efforts to achieve the result.",
+        "Our experienced installers perform work on installing protective nets on platforms, ensuring high quality and adherence to all technical standards.",
+        "Professional preparation and laying of cable routes on a vessel, including design, installation, and testing in accordance with international standards.",
+        "On this platform for wind turbine installation, our team successfully completed a number of key tasks, including welding handrails, installing decks, installing bird protection nets, as well as carrying out other technical work such as laying cables, installing equipment, and setting up systems."
+      ]
+    },
+    "contact": {
+      "title": "Contacts",
+      "subtitle": "Leave a request!",
+      "content": "You will be contacted shortly.",
+      "form": {
+        "name": "Name",
+        "email": "E-mail",
+        "phone": "Phone number",
+        "subject": "Subject",
+        "message": "Message",
+        "message-description": "Write your message here...",
+        "send": "Send"
+      }
+    },
+    "vacancies": {
+      "title": "Vacancies",
+      "title-single": "Join Fortuna Navale as a",
+      "open-single": "Open",
+      "open": "Open",
+      "search": "Search",
+      "filters": {
+        "location": "Location",
+        "employmentType": "Employment Type",
+        "removeSelection": "Clear filters"
+      },
+      "vacancieNotFound": {
+        "title": "Didn't find a vacancy?",
+        "content": "Try searching with other criteria."
+      },
+      "didntFind": {
+        "title": "Didn't find a vacancy you are interested in?",
+        "content": "Leave your details so we can notify you when a vacancy opens up."
+      },
+      "jobInterested": "If you are interested in this vacancy, fill out the form below",
+      "info": {
+        "salary": "Salary",
+        "bruto": "before tax",
+        "JobFormat": "Job Format",
+        "jobType": "Employment",
+        "experience": "Work Experience",
+        "responsibilities": "Responsibilities",
+        "requirements": "Requirements",
+        "advantages": "Will be an advantage",
+        "weOffer": "We Offer"
+      },
+      "form": {
+        "name": "Name",
+        "email": "E-mail",
+        "cv": "Upload CV",
+        "send": "Submit Application"
+      },
+      "cities": {
+        "Riga": "Riga",
+        "Gavr": "Le Havre",
+        "Nant": "Nant"
+      },
+      "countries": {
+        "Latvia": "Latvia",
+        "France": "France"
+      },
+      "employmentType": {
+        "Full-time": "Full-time",
+        "Part-time": "Part-time",
+        "Flexible": "Flexible"
+      },
+      "postings": {
+        "shipbuilder-1": {
+          "title": "Shipbuilder",
+          "excerpt": "If you have experience working with metal structures, assembling and repairing vessels, and a desire to work in a stable company, we will be happy to see you on our team.",
+          "jobFormat": "On-site",
+          "experience": "More than 3 years",
+          "responsibilities": [
+            "Assembly, installation, and repair of vessel hulls according to drawings and technical documentation.",
+            "Working with metal structures, welding, riveting, sealing seams.",
+            "Installation and testing of ship equipment.",
+            "Interaction with engineers and other specialists to control the quality of work.",
+            "Compliance with safety regulations and shipbuilding standards."
+          ],
+          "requirements": [
+            "Experience in shipbuilding from 3 years",
+            "Knowledge of vessel assembly and repair technologies.",
+            "Ability to work with tools and equipment (welding machines, metal cutting, etc.).",
+            "Reading technical drawings and diagrams.",
+            "Physical stamina, responsibility, and attention to detail.",
+            "Readiness to work in shipyard conditions (open and closed workshops, water bodies)."
+          ],
+          "advantages": [
+            "Availability of specialized education [shipbuilding, mechanical engineering, metal processing].",
+            "Experience with modern shipbuilding technologies.",
+            "Welding and hydraulics skills."
+          ],
+          "weOffer": [
+            "Official employment and stable salary.",
+            "Opportunities for career growth and training.",
+            "Work in a large shipbuilding company with modern equipment.",
+            "Friendly team and safe working conditions."
+          ]
+        },
+        "ship-electrician-1": {
+          "title": "Ship Electrician",
+          "excerpt": "If you have experience in installation, diagnostics, and repair of ship electrical systems, and a desire to work in a stable company, we will be happy to see you on our team.",
+          "jobFormat": "On-site",
+          "experience": "More than 3 years",
+          "responsibilities": [
+            "Assembly, installation, and repair of vessel hulls according to drawings and technical documentation.",
+            "Working with metal structures, welding, riveting, sealing seams.",
+            "Installation and testing of ship equipment.",
+            "Interaction with engineers and other specialists to control the quality of work.",
+            "Compliance with safety regulations and shipbuilding standards."
+          ],
+          "requirements": [
+            "Experience in shipbuilding from 3 years",
+            "Knowledge of vessel assembly and repair technologies.",
+            "Ability to work with tools and equipment (welding machines, metal cutting, etc.).",
+            "Reading technical drawings and diagrams.",
+            "Physical stamina, responsibility, and attention to detail.",
+            "Readiness to work in shipyard conditions (open and closed workshops, water bodies)."
+          ],
+          "advantages": [
+            "Availability of specialized education [shipbuilding, mechanical engineering, metal processing].",
+            "Experience with modern shipbuilding technologies.",
+            "Welding and hydraulics skills."
+          ],
+          "weOffer": [
+            "Official employment and stable salary.",
+            "Opportunities for career growth and training.",
+            "Work in a large shipbuilding company with modern equipment.",
+            "Friendly team and safe working conditions."
+          ]
+        },
+        "ship-electrician-2": {
+          "title": "Ship Electrician",
+          "excerpt": "If you have experience in installation, diagnostics, and repair of ship electrical systems, and a desire to work in a stable company, we will be happy to see you on our team.",
+          "jobFormat": "On-site",
+          "experience": "More than 3 years",
+          "responsibilities": [
+            "Assembly, installation, and repair of vessel hulls according to drawings and technical documentation.",
+            "Working with metal structures, welding, riveting, sealing seams.",
+            "Installation and testing of ship equipment.",
+            "Interaction with engineers and other specialists to control the quality of work.",
+            "Compliance with safety regulations and shipbuilding standards."
+          ],
+          "requirements": [
+            "Experience in shipbuilding from 3 years",
+            "Knowledge of vessel assembly and repair technologies.",
+            "Ability to work with tools and equipment (welding machines, metal cutting, etc.).",
+            "Reading technical drawings and diagrams.",
+            "Physical stamina, responsibility, and attention to detail.",
+            "Readiness to work in shipyard conditions (open and closed workshops, water bodies)."
+          ],
+          "advantages": [
+            "Availability of specialized education [shipbuilding, mechanical engineering, metal processing].",
+            "Experience with modern shipbuilding technologies.",
+            "Welding and hydraulics skills."
+          ],
+          "weOffer": [
+            "Official employment and stable salary.",
+            "Opportunities for career growth and training.",
+            "Work in a large shipbuilding company with modern equipment.",
+            "Friendly team and safe working conditions."
+          ]
+        }
+      }
     }
+  },
+  "contact": {
+    "title": "CONTACTS",
+    "people": [
+      {
+        "name": "Angelina Vinnicenko",
+        "position": "Assistant to the Head",
+        "email": "angelina.vinnicenko@fortunanaval.com",
+        "phone": "+33 6 22 35 19 05"
+      },
+      {
+        "name": "Dmitrijs Mihailovs",
+        "position": "Assistant to the Head",
+        "email": "dmitry.mihailovs@fortunanaval.com",
+        "phone": "+371 28225035"
+      },
+      {
+        "name": "Siarmiakja Siarhuei",
+        "position": "Technical Director",
+        "email": "siarmiakja@gmail.com",
+        "phone": "+33 6 65 26 31 09"
+      },
+      {
+        "name": "Sergejs Sklarovs",
+        "position": "Director",
+        "email": "fortuna.naval@gmail.com",
+        "phone": "+33 6 26 55 03 40"
+      }
+    ]
+  },
+  "menu": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "projects": "Projects",
+    "vacancies": "Vacancies",
+    "contact": "Contacts"
+  },
+  "buttons": {
+    "orderService": "Order Service",
+    "more": "More",
+    "sendForm": "Send Form"
+  },
+  "notFound": {
+    "title": "We are building!",
+    "subtitle": "please wait on the",
+    "page": "home page"
   }
 }

@@ -17,7 +17,7 @@ interface OurMission {
 }
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const aboutUsContent = t("page.about.aboutUs.content", {
     returnObjects: true,
@@ -32,7 +32,7 @@ export default function Home() {
   }) as Reason[];
 
   return (
-    <div className="">
+    <div>
       <Heading image="https://drive.google.com/thumbnail?id=1hM4m1F2jY0ZSouWQYhYb1Ylpu6WJV-5A&sz=w1500">
         {t("page.about.title")}
       </Heading>
@@ -45,7 +45,7 @@ export default function Home() {
           />
         </div>
         <div>
-          <h2 className="font-bold text-2xl uppercase text-center text-secondary-100 font-mono mb-4">
+          <h2 className="text-2xl uppercase text-center text-secondary-100 font-mono mb-4">
             {t("page.about.aboutUs.title")}
           </h2>
           {Array.isArray(aboutUsContent) ? (
@@ -65,20 +65,20 @@ export default function Home() {
           {Array.isArray(ourMission) &&
             ourMission.map((mission) => (
               <div key={mission.title}>
-                <h2 className="font-bold text-accent-100 uppercase font-mono text-2xl">
+                <h2 className="text-accent-100 uppercase font-mono text-2xl mb-8">
                   {mission.title}
                 </h2>
-                <p className="ml-8">{mission.content}</p>
+                <p className="ml-16">{mission.content}</p>
               </div>
             ))}
         </div>
       </WavyContainer>
 
       <WavyContainer end className="py-16 flex flex-col">
-        <h2 className="font-bold text-3xl uppercase mb-8 text-secondary-100 font-mono">
+        <h2 className="text-3xl uppercase mb-8 text-secondary-100 font-mono">
           {t("page.about.whyChooseUs.title")}
         </h2>
-        <div className="grid grid-cols-4 gap-8 min-h-[25rem]">
+        <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-8 min-h-[25rem]">
           {Array.isArray(reasons) &&
             reasons.map((reason) => (
               <div className="relative">
@@ -86,9 +86,9 @@ export default function Home() {
                   src={reason.image}
                   className={`w-full h-full object-cover block`}
                 />
-                <div className="absolute grid place-items-center inset-0 bg-black/60 text-white text-center opacity-0 hover:opacity-100 duration-300">
+                <div className="absolute grid place-items-center p-4 inset-0 bg-black/60 text-white text-center opacity-0 hover:opacity-100 duration-300">
                   <div>
-                    <span className="font-bold mb-2 text-l font-mono text-center block">
+                    <span className="mb-2 text-l font-mono text-center block">
                       {reason.title}
                     </span>
                     <p>{reason.content}</p>
@@ -99,13 +99,13 @@ export default function Home() {
         </div>
 
         <div className="grid my-16">
-          <h2 className="font-bold uppercase text-2xl text-secondary-100 mb-8 font-mono">
+          <h2 className="uppercase text-2xl text-secondary-100 mb-8 font-mono">
             {t("page.about.whyChooseUs.joinUs")}
           </h2>
           <p className="mb-8">{t("page.about.whyChooseUs.content")}</p>
           <Link
-            to="/vacancies"
-            className="bg-primary uppercase text-white px-8 py-3 justify-self-end rounded-md text-lg"
+            to={"/" + i18n.language + "/vacancies"}
+            className="bg-primary uppercase text-white px-8 py-3 md:justify-self-end text-center rounded-md text-lg"
           >
             {t("page.about.whyChooseUs.cta")}
           </Link>

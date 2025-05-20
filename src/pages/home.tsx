@@ -3,6 +3,7 @@ import WavyContainer from "~/components/WavyConatiner";
 import { Button } from "~/components/ui/button";
 import Heading from "../components/Heading";
 import Map from "~/components/Map";
+import { Link } from "react-router";
 
 // Define types (as shown above)
 interface ServiceSection {
@@ -17,10 +18,10 @@ interface Project {
 }
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const aboutUsContent = t("page.home.aboutUs.content", {
-    returnObjects: true, // <- Important!
+    returnObjects: true,
   });
 
   const serviceSections = t("page.home.services.sections", {
@@ -38,7 +39,7 @@ export default function Home() {
           <span className="text-[clamp(1.5rem,10vw,7rem)] leading-15 font-mono text-accent-100">
             {t("page.home.title.highlight")}
           </span>
-          <span className="text-[clamp(1rem,5vw,4rem)] leading-30 font-bold font-sans text-background text-bold,">
+          <span className="text-[clamp(1rem,5vw,4rem)] leading-30 font-sans text-background text-bold,">
             {t("page.home.title.middle")}
           </span>
           <span className="text-[clamp(1rem,3vw,3rem)] leading-15 font-semibold font-sans tracking-widest text-background">
@@ -46,34 +47,33 @@ export default function Home() {
           </span>
         </div>
       </Heading>
-      {/* --- About Us Section --- */}
-      <WavyContainer className="grid grid-cols-[1fr_2fr] gap-8">
-        <div className="flex items-center">
+      <WavyContainer className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 py-16">
+        <div className="flex items-center justify-center lg:justify-start">
           <img
             src="https://drive.google.com/thumbnail?id=19LIm62cwvxbOleREuXLyp6S8QgdlMu_y&sz=w500"
-            alt={t("page.home.aboutUs.title")}
             className="w-full h-64 object-cover"
           />
         </div>
         <div>
-          <h2 className="font-bold uppercase font-mono text-3xl text-secondary text-center mb-4">
-            {t("page.home.aboutUs.title")}
+          <h2 className="text-2xl uppercase text-center text-secondary-100 font-mono mb-4">
+            {t("page.about.aboutUs.title")}
           </h2>
-          {/* Iterate over the fetched array */}
           {Array.isArray(aboutUsContent) ? (
             aboutUsContent.map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
+              <p key={index} className="mb-4">
+                {paragraph}
+              </p>
             ))
           ) : (
             <p>{t("page.home.aboutUs.content")}</p>
           )}
         </div>
       </WavyContainer>
-      <WavyContainer secondary className="flex flex-col gap-8">
-        <h2 className="font-bold uppercase font-mono text-3xl text-accent-100 text-center mb-8">
+      <WavyContainer secondary className="flex flex-col gap-8 py-16">
+        <h2 className="uppercase font-mono text-3xl text-accent-100 text-center mb-8">
           {t("page.home.services.title")}
         </h2>
-        <div className="grid grid-cols-2 gap-16 mt-[2rem] count-service">
+        <div className="grid md:grid-cols-2 gap-16 mt-[2rem] count-service">
           {/* Iterate over the fetched serviceSections array */}
           {Array.isArray(serviceSections) &&
             serviceSections.map((section, index) => (
@@ -85,30 +85,46 @@ export default function Home() {
               />
             ))}
         </div>
-        <Button className="self-end">{t("buttons.orderService")}</Button>
+        <Button className="self-end">
+          <Link to={`/${i18n.language}/services`}>
+            {t("buttons.orderService")}
+          </Link>
+        </Button>
       </WavyContainer>
       <WavyContainer className="flex flex-col gap-8">
-        <h2 className="uppercase font-bold font-mono text-3xl text-secondary text-center mb-8">
+        <h2 className="uppercase font-mono text-3xl text-secondary text-center mb-8">
           {t("page.home.projects.title")}
         </h2>
-        <div className="grid grid-cols-3 gap-8 h-[30rem]">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-8">
           {Array.isArray(projects) &&
             projects.map((project) => (
-              <div key={project.content} className="relative">
+              <div
+                key={project.content}
+                className="relative group overflow-hidden flex min-h-[20rem]"
+              >
+                {" "}
+                {/* Removed 'flex' and any fixed height/aspect ratio */}
+                {/* Image (Still absolute to cover the space) */}
                 <img
                   src={project.image}
-                  className={`w-full h-full object-cover block`}
+                  alt="Project"
+                  className="absolute inset-0 object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                 />
-                <p className="absolute grid place-items-center inset-0 bg-black/60 text-white p-8 text-center opacity-0 hover:opacity-100 duration-300">
-                  {project.content}
-                </p>
+                {/* Text Content (This will determine the height) */}
+                <div className="relative z-10 bg-black/60 text-white p-8 text-center opacity-0 group-hover:opacity-100 grid place-items-center">
+                  {" "}
+                  {/* Removed absolute positioning and grid place-items-center from here */}
+                  <p>{project.content}</p>
+                </div>
               </div>
             ))}
         </div>
-        <Button className="self-end">{t("buttons.more")}</Button>
+        <Button className="self-end cursor-pointer">
+          <Link to={`/${i18n.language}/projects`}>{t("buttons.more")}</Link>
+        </Button>
       </WavyContainer>
       <WavyContainer secondary className="pb-32">
-        <h2 className="font-bold font-mono uppercase text-3xl text-accent-100 text-center mb-32">
+        <h2 className="font-mono uppercase text-3xl text-accent-100 text-center mb-32">
           {t("page.home.partners.title")}
         </h2>
 
@@ -134,7 +150,7 @@ const ServiceCard = ({
 }) => {
   return (
     <div
-      className="text-foreground increment-service relative isolate rounded-[1rem] p-4 before:absolute before:text-background before:text-2xl before:w-full before:h-full before:p-4 before:rounded-[1rem] before:-z-20 before:top-[-3rem] last:before:bg-accent-100 first:before:bg-accent-100 before:bg-primary before:left-[-2.5rem] before:content-['0'_counter(service)_'.'] after:content-[''] after:absolute after:bg-background after:rounded-[1rem] after:inset-0 after:-z-10"
+      className="text-foreground increment-service relative isolate rounded-[1rem] p-4 before:absolute before:text-background before:text-2xl before:w-full before:h-full before:p-4 before:rounded-[1rem] before:-z-20 before:top-[-3rem] last:before:bg-accent-100 first:before:bg-accent-100 before:bg-primary lg:before:left-[-2.5rem] before:left-[-1rem] before:content-['0'_counter(service)_'.'] after:content-[''] after:absolute after:bg-background after:rounded-[1rem] after:inset-0 after:-z-10"
       data-service-number={serviceNumber}
     >
       <h3 className="font-bold">{service.title}</h3>
