@@ -24,11 +24,11 @@ export default function NotFound() {
           className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 aspect-1 w-[18vw] object-contain"
         />
       </h1>
-      <h2 className="text-[5vw] font-bold text-center text-background font-mono">
+      <h2 className="text-[5vw] text-center text-background font-mono">
         {t("notFound.title")}
       </h2>
       <h3 className="text-center text-background text-[1.5vw] font-mono">
-        {t("notFound.subtitle")}
+        {t("notFound.subtitle")}{" "}
         <Link to={`/${currentLangCode}`} className="text-accent">
           {t("notFound.page")}
         </Link>

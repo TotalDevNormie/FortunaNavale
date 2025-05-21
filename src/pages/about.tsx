@@ -105,7 +105,7 @@ export default function Home() {
           <p className="mb-8">{t("page.about.whyChooseUs.content")}</p>
           <Link
             to={"/" + i18n.language + "/vacancies"}
-            className="bg-primary uppercase text-white px-8 py-3 md:justify-self-end text-center rounded-md text-lg"
+            className="bg-primary text-white px-8 py-3 md:justify-self-end text-center rounded-md"
           >
             {t("page.about.whyChooseUs.cta")}
           </Link>
