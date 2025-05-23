@@ -9,8 +9,11 @@ const Heading = ({
 }) => (
   <div className="min-h-[80vh] grid place-items-center relative isolate">
     <div
-      className="absolute -z-10 inset-0 bg-cover bg-no-repeat bg-[center_bottom_20%] brightness-75"
-      style={{ backgroundImage: `url(${image})` }}
+      className="absolute -z-10 inset-0 bg-cover bg-no-repeat brightness-75"
+      style={{
+        backgroundImage: `url(${image})`,
+        backgroundPosition: "center bottom 20%",
+      }}
     ></div>
     <h1 className="text-[clamp(1.5rem,10vw,7rem)] uppercase leading-15 font-mono text-accent-100">
       {children}
