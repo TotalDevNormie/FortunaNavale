@@ -31,8 +31,8 @@ export default function Vacancie() {
 
   return (
     <div>
-      <Heading image="https://drive.google.com/thumbnail?id=18VVeyPmAFaxnwq32UXJqEXPpPY53XYOP&sz=w1500">
-        {t("page.vacancies.title")}
+      <Heading image={jobInfo.image}>
+        {job.title}
       </Heading>
       <WavyContainer end className="grid gap-4">
         <div className="flex items-center mb-8 gap-4">

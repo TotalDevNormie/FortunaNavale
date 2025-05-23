@@ -7,7 +7,8 @@
     "employmentType": "Full-time",
     "salaryBruto": "2000-3000",
     "salaryCurency": "EUR",
-    "datePosted": "10.04.2025"
+    "datePosted": "10.04.2025",
+    "image": "https://drive.google.com/thumbnail?id=18VVeyPmAFaxnwq32UXJqEXPpPY53XYOP&sz=w1500"
   },
   {
     "id": "ship-electrician-1",
@@ -17,7 +18,8 @@
     "employmentType": "Full-time",
     "salaryBruto": "2000-3000",
     "salaryCurency": "EUR",
-    "datePosted": "10.04.2025"
+    "datePosted": "10.04.2025",
+    "image": "https://drive.google.com/thumbnail?id=1iXy9FxJZOdc2_gv821DPJ_ExhNt9QHup&sz=w1500"
   },
   {
     "id": "ship-electrician-2",
@@ -27,6 +29,7 @@
     "employmentType": "Full-time",
     "salaryBruto": "2000-3000",
     "salaryCurency": "EUR",
-    "datePosted": "10.04.2025"
+    "datePosted": "10.04.2025",
+    "image": "https://drive.google.com/thumbnail?id=1iXy9FxJZOdc2_gv821DPJ_ExhNt9QHup&sz=w1500"
   }
 ]
