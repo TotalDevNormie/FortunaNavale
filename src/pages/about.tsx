@@ -2,9 +2,11 @@ import { useTranslation } from "react-i18next";
 import WavyContainer from "~/components/WavyConatiner";
 import { Link } from "react-router-dom";
 import Heading from "~/components/Heading";
+import React, { useRef, useEffect, useState } from "react"; // Added React and hooks
+import useIsMobile from "~/hooks/useIsMobile"; // Import the hook
+import { cn } from "~/lib/utils";
 
-// These interfaces will be used when implementing future features
-
+// Interfaces
 interface Reason {
   title: string;
   content: string;
@@ -16,8 +18,67 @@ interface OurMission {
   content: string;
 }
 
-export default function Home() {
+// ReasonItemProps interface (if ReasonItem is in this file)
+interface ReasonItemProps {
+  reason: Reason;
+  isMobile: boolean;
+}
+
+// ReasonItem component (can be here or imported)
+const ReasonItem: React.FC<ReasonItemProps> = ({ reason, isMobile }) => {
+  const itemRef = useRef<HTMLDivElement>(null);
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const currentRef = itemRef.current;
+    if (!currentRef) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.9 }
+    );
+
+    observer.observe(currentRef);
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
+
+  const shouldForceHover = isMobile && isInView;
+
+  return (
+    <div
+      ref={itemRef}
+      className={cn(
+        "relative group overflow-hidden",
+        shouldForceHover && "force-mobile-hover"
+      )}
+    >
+      <img
+        src={reason.image}
+        alt={reason.title}
+        className="w-full h-full object-cover block group-hover:scale-105 group-[.force-mobile-hover]:scale-105 duration-300"
+      />
+      <div className="absolute grid place-items-center p-4 inset-0 bg-black/60 text-white text-center opacity-0 group-hover:opacity-100 group-[.force-mobile-hover]:opacity-100 duration-300">
+        <div>
+          <span className="mb-2 text-l font-mono text-center block">
+            {reason.title}
+          </span>
+          <p>{reason.content}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default function AboutPage() {
+  // Assuming this is an About page
   const { t, i18n } = useTranslation();
+  const isMobile = useIsMobile(); // Use the hook
 
   const aboutUsContent = t("page.about.aboutUs.content", {
     returnObjects: true,
@@ -42,6 +103,7 @@ export default function Home() {
           <img
             src="https://drive.google.com/thumbnail?id=19LIm62cwvxbOleREuXLyp6S8QgdlMu_y&sz=w500"
             className="w-full h-64 object-cover"
+            alt=""
           />
         </div>
         <div>
@@ -81,20 +143,11 @@ export default function Home() {
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-8 min-h-[25rem]">
           {Array.isArray(reasons) &&
             reasons.map((reason) => (
-              <div className="relative group overflow-hidden" key={reason.title}>
-                <img
-                  src={reason.image}
-                  className={`w-full h-full object-cover block group-hover:scale-105 duration-300`}
-                />
-                <div className="absolute grid place-items-center p-4 inset-0 bg-black/60 text-white text-center opacity-0 hover:opacity-100 duration-300">
-                  <div>
-                    <span className="mb-2 text-l font-mono text-center block">
-                      {reason.title}
-                    </span>
-                    <p>{reason.content}</p>
-                  </div>
-                </div>
-              </div>
+              <ReasonItem
+                key={reason.title}
+                reason={reason}
+                isMobile={isMobile}
+              />
             ))}
         </div>
 

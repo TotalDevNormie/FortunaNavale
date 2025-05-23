@@ -4,8 +4,11 @@ import { Button } from "~/components/ui/button";
 import Heading from "../components/Heading";
 import Map from "~/components/Map";
 import { Link } from "react-router";
+import React, { useRef, useEffect, useState } from "react"; // Added React and hooks
+import useIsMobile from "~/hooks/useIsMobile"; // Import the hook
+import { cn } from "~/lib/utils";
 
-// Define types (as shown above)
+// Define types
 interface ServiceSection {
   title: string;
   content: string;
@@ -17,8 +20,61 @@ interface Project {
   content: string;
 }
 
+// ProjectItemProps interface (if ProjectItem is in this file)
+interface ProjectItemProps {
+  project: Project;
+  isMobile: boolean;
+}
+
+// ProjectItem component (can be here or imported)
+const ProjectItem: React.FC<ProjectItemProps> = ({ project, isMobile }) => {
+  const itemRef = useRef<HTMLDivElement>(null);
+  const [isInView, setIsInView] = useState(false);
+
+  useEffect(() => {
+    const currentRef = itemRef.current;
+    if (!currentRef) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.9 }
+    );
+
+    observer.observe(currentRef);
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef);
+      }
+    };
+  }, []);
+
+  const shouldForceHover = isMobile && isInView;
+
+  return (
+    <div
+      ref={itemRef}
+      className={cn(
+        "relative group overflow-hidden flex min-h-[20rem]",
+        shouldForceHover && "force-mobile-hover"
+      )}
+    >
+      <img
+        src={project.image}
+        alt="Project"
+        className="absolute inset-0 object-cover w-full h-full transition-transform duration-300 group-hover:scale-105 group-[.force-mobile-hover]:scale-105"
+      />
+      <div className="relative z-10 bg-black/60 text-white p-8 text-center opacity-0 group-hover:opacity-100 group-[.force-mobile-hover]:opacity-100 duration-300 grid place-items-center">
+        <p>{project.content}</p>
+      </div>
+    </div>
+  );
+};
+
 export default function Home() {
   const { t, i18n } = useTranslation();
+  const isMobile = useIsMobile(); // Use the hook
 
   const aboutUsContent = t("page.home.aboutUs.content", {
     returnObjects: true,
@@ -52,6 +108,7 @@ export default function Home() {
           <img
             src="https://drive.google.com/thumbnail?id=19LIm62cwvxbOleREuXLyp6S8QgdlMu_y&sz=w500"
             className="w-full h-64 object-cover"
+            alt=""
           />
         </div>
         <div>
@@ -74,12 +131,11 @@ export default function Home() {
           {t("page.home.services.title")}
         </h2>
         <div className="grid md:grid-cols-2 gap-16 mt-[2rem] count-service">
-          {/* Iterate over the fetched serviceSections array */}
           {Array.isArray(serviceSections) &&
             serviceSections.map((section, index) => (
               <ServiceCard
                 key={section.title || index}
-                service={section} // Pass the whole section object
+                service={section}
                 serviceNumber={index + 1}
               />
             ))}
@@ -97,20 +153,11 @@ export default function Home() {
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 gap-8">
           {Array.isArray(projects) &&
             projects.map((project) => (
-              <div
+              <ProjectItem
                 key={project.content}
-                className="relative group overflow-hidden flex min-h-[20rem]"
-              >
-                <img
-                  src={project.image}
-                  alt="Project"
-                  className="absolute inset-0 object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="relative z-10 bg-black/60 text-white p-8 text-center opacity-0 group-hover:opacity-100 duration-300 grid place-items-center">
-                  {" "}
-                  <p>{project.content}</p>
-                </div>
-              </div>
+                project={project}
+                isMobile={isMobile}
+              />
             ))}
         </div>
         <Button className="self-end cursor-pointer">
@@ -121,12 +168,9 @@ export default function Home() {
         <h2 className="font-mono uppercase text-3xl text-accent-100 text-center mb-32">
           {t("page.home.partners.title")}
         </h2>
-
         <div className="grid grid-cols-3 gap-8 h-[10rem]">
           <div className="bg-background"></div>
-
           <div className="bg-background"></div>
-
           <div className="bg-background"></div>
         </div>
       </WavyContainer>
@@ -135,6 +179,7 @@ export default function Home() {
   );
 }
 
+// ServiceCard component remains unchanged
 const ServiceCard = ({
   service,
   serviceNumber,
@@ -149,7 +194,6 @@ const ServiceCard = ({
     >
       <h3 className="font-bold">{service.title}</h3>
       <p>{service.content}</p>
-
       <ul>
         {Array.isArray(service.list) &&
           service.list.map((item, index) => <li key={index}>{item}</li>)}

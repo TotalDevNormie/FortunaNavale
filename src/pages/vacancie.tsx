@@ -31,9 +31,7 @@ export default function Vacancie() {
 
   return (
     <div>
-      <Heading image={jobInfo.image}>
-        {job.title}
-      </Heading>
+      <Heading image={jobInfo.image}>{job.title}</Heading>
       <WavyContainer end className="grid gap-4">
         <div className="flex items-center mb-8 gap-4">
           <Button
@@ -49,7 +47,7 @@ export default function Vacancie() {
         </div>
         <h1 className="text-3xl font-bold text-orange-500 mb-6">{job.title}</h1>
         <Separator />
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid xs:grid-cols-2 sm:grid-cols-4 gap-4">
           <div>
             <h2 className="font-semibold">
               {t("page.vacancies.info.salary")}:
@@ -123,7 +121,9 @@ export default function Vacancie() {
           <h2 className="text-xl font-bold">
             {t("page.vacancies.jobInterested")}
           </h2>
-          <form action="" id="vacancie"
+          <form
+            action=""
+            id="vacancie"
             className="flex flex-col md:flex-row gap-4 items-stretch items-end mt-16"
           >
             <label>
