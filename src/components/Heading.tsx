@@ -9,7 +9,7 @@ const Heading = ({
 }) => (
   <div className="min-h-[80vh] grid place-items-center relative isolate">
     <div
-      className="absolute -z-10 inset-0 bg-cover bg-no-repeat brightness-75"
+      className="absolute -z-10 inset-0 bg-cover bg-no-repeat brightness-60"
       style={{
         backgroundImage: `url(${image})`,
         backgroundPosition: "center bottom 20%",

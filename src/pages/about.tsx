@@ -81,10 +81,10 @@ export default function Home() {
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 gap-8 min-h-[25rem]">
           {Array.isArray(reasons) &&
             reasons.map((reason) => (
-              <div className="relative">
+              <div className="relative group overflow-hidden" key={reason.title}>
                 <img
                   src={reason.image}
-                  className={`w-full h-full object-cover block`}
+                  className={`w-full h-full object-cover block group-hover:scale-105 duration-300`}
                 />
                 <div className="absolute grid place-items-center p-4 inset-0 bg-black/60 text-white text-center opacity-0 hover:opacity-100 duration-300">
                   <div>

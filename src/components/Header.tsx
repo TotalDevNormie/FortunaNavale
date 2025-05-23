@@ -21,7 +21,7 @@ import {
 import { Menu, X } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
-export const pages = ["home", "about", "services", "projects", "vacancies"];
+export const pages = ["home", "about", "projects", "vacancies"];
 
 export default function Header() {
   const { i18n, t } = useTranslation();
@@ -80,9 +80,9 @@ export default function Header() {
       </div>
 
       {/* Desktop Navigation */}
-      <div className="w-fit-container mx-auto hidden lg:flex items-center gap-4 py-4 justify-between">
+      <div className="w-fit-container mx-auto hidden 2xl:flex items-center gap-4 py-4 justify-between">
         <NavigationMenu className="w-full max-w-auto justify-stretch *:w-full">
-          <NavigationMenuList className="w-full justify-between gap-4 pr-16">
+          <NavigationMenuList className="w-5/6 justify-between gap-4">
             {pages.map((page, index) => (
               <NavigationMenuItem key={index}>
                 <Link to={`/${currentLangCode}/${page === "home" ? "" : page}`}>
@@ -100,7 +100,7 @@ export default function Header() {
         </NavigationMenu>
         <div className="flex gap-2 items-center">
           <Select value={currentLangCode} onValueChange={handleLanguageChange}>
-            <SelectTrigger className="w-[5rem] text-background gap-2 uppercase">
+            <SelectTrigger className="w-full text-background gap-2 uppercase">
               <SelectValue
                 placeholder={t("menu.language") || "Language"}
                 className="uppercase text-background"
@@ -108,7 +108,7 @@ export default function Header() {
                 {currentLanguage}
               </SelectValue>
             </SelectTrigger>
-            <SelectContent className="w-[5rem]">
+            <SelectContent className="w-full">
               {supportedLngs.map((lang: string) => (
                 <SelectItem key={lang} value={lang} className="uppercase">
                   {lang}
@@ -123,7 +123,7 @@ export default function Header() {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="lg:hidden flex justify-end p-4">
+      <div className="2xl:hidden flex justify-end p-4">
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
             <Button

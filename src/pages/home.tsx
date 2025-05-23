@@ -78,7 +78,6 @@ export default function Home() {
           {Array.isArray(serviceSections) &&
             serviceSections.map((section, index) => (
               <ServiceCard
-                // Use a unique identifier from the data if possible, otherwise index
                 key={section.title || index}
                 service={section} // Pass the whole section object
                 serviceNumber={index + 1}
@@ -86,7 +85,7 @@ export default function Home() {
             ))}
         </div>
         <Button className="self-end">
-          <Link to={`/${i18n.language}/services`}>
+          <Link to={`/${i18n.language}/contact`}>
             {t("buttons.orderService")}
           </Link>
         </Button>
@@ -102,18 +101,13 @@ export default function Home() {
                 key={project.content}
                 className="relative group overflow-hidden flex min-h-[20rem]"
               >
-                {" "}
-                {/* Removed 'flex' and any fixed height/aspect ratio */}
-                {/* Image (Still absolute to cover the space) */}
                 <img
                   src={project.image}
                   alt="Project"
                   className="absolute inset-0 object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
                 />
-                {/* Text Content (This will determine the height) */}
-                <div className="relative z-10 bg-black/60 text-white p-8 text-center opacity-0 group-hover:opacity-100 grid place-items-center">
+                <div className="relative z-10 bg-black/60 text-white p-8 text-center opacity-0 group-hover:opacity-100 duration-300 grid place-items-center">
                   {" "}
-                  {/* Removed absolute positioning and grid place-items-center from here */}
                   <p>{project.content}</p>
                 </div>
               </div>

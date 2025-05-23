@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
           <div className="flex justify-between pb-8">
             <p className="text-sm text-secondary-foreground/80">
-              &copy; 2025 Fortuna Navale
+              &copy; 2025 Fortuna Navale, website made by <a className="underline" target="_blank" href="https://www.firsof.com">Firsof</a>
             </p>
             <div className="flex flex-row gap-4 items-center md:items-end md:pt-0">
               <a
