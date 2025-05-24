@@ -138,7 +138,7 @@ export default function Vacancie() {
             </label>
             <FileInput name="cv" placeholder={t("page.vacancies.form.cv")} />
           </form>
-          <Button form="vacancie" className="mt-12">
+          <Button form="vacancie" className="mt-12 w-full md:w-auto">
             {t("buttons.sendForm")}
           </Button>
         </div>

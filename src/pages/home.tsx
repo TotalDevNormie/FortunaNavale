@@ -168,10 +168,9 @@ export default function Home() {
         <h2 className="font-mono uppercase text-3xl text-accent-100 text-center mb-32">
           {t("page.home.partners.title")}
         </h2>
-        <div className="grid grid-cols-3 gap-8 h-[10rem]">
-          <div className="bg-background"></div>
-          <div className="bg-background"></div>
-          <div className="bg-background"></div>
+        <div className="flex justify-around gap-8 h-[5rem]">
+          <img src="https://drive.google.com/thumbnail?id=1sM3fK7ylRzMfgw4-uHZyDJ0cqc_5ogCB&sz=w1000" alt="" />
+          <img src="https://drive.google.com/thumbnail?id=14KGo1UxToVzLTIufyVSgeMF6Nb7yArmP&sz=w1000" alt="" />
         </div>
       </WavyContainer>
       <Map />
