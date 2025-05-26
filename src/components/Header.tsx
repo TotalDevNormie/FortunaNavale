@@ -18,7 +18,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "./ui/navigation-menu";
-import { Menu, X } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
 export const pages = ["home", "about", "projects", "vacancies"];
@@ -126,11 +126,7 @@ export default function Header() {
               size="icon"
               className="text-background cursor-pointer"
             >
-              {isOpen ? (
-                <X className="h-6 w-6" />
-              ) : (
-                <Menu className="h-6 w-6" />
-              )}
+              <Menu />
             </Button>
           </SheetTrigger>
           <SheetContent
