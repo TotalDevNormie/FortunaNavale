@@ -85,7 +85,7 @@ export default function Footer() {
             <p className="text-sm text-secondary-foreground/80">
               &copy; 2025 Fortuna Navale, website made by <a className="underline" target="_blank" href="https://www.firsof.com">Firsof</a>
             </p>
-            <div className="flex flex-row gap-4 items-center justify-center md:items-end md:pt-0">
+            <div className="flex flex-row gap-4 items-center justify-center md:pt-0">
               <a
                 href={socialLinks.facebook}
                 target="_blank"
