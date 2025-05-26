@@ -92,13 +92,13 @@ export default function Home() {
     <div>
       <Heading image="https://drive.google.com/thumbnail?id=1izqiNhktvr4KjyZV6w4srve2DYaO7Na2&sz=w1500">
         <div className="flex flex-col items-center gap-4">
-          <span className="text-[clamp(1.5rem,10vw,7rem)] leading-15 font-mono text-accent-100">
+          <span className="text-[clamp(2rem,10vw,7rem)] leading-[clamp(2rem,10vw,7rem)] font-mono text-center text-accent-100">
             {t("page.home.title.highlight")}
           </span>
-          <span className="text-[clamp(1rem,5vw,4rem)] leading-30 font-sans text-background text-bold,">
+          <span className="text-[clamp(1.5rem,5vw,3rem)] leading-[clamp(2rem,5vw,4rem)] font-sans text-center  text-background text-bold,">
             {t("page.home.title.middle")}
           </span>
-          <span className="text-[clamp(1rem,3vw,3rem)] leading-15 font-semibold font-sans tracking-widest text-background">
+          <span className="text-[clamp(1.5rem,3vw,4rem)] leading-[clamp(2rem,5vw,4rem)] text-center font-semibold font-sans tracking-widest text-background">
             {t("page.home.title.lowlight")}
           </span>
         </div>
@@ -168,7 +168,7 @@ export default function Home() {
         <h2 className="font-mono uppercase text-3xl text-accent-100 text-center mb-32">
           {t("page.home.partners.title")}
         </h2>
-        <div className="flex justify-around gap-8 h-[5rem]">
+        <div className="flex justify-around flex-wrap gap-8 h-[5rem]">
           <img src="https://drive.google.com/thumbnail?id=1sM3fK7ylRzMfgw4-uHZyDJ0cqc_5ogCB&sz=w1000" alt="" />
           <img src="https://drive.google.com/thumbnail?id=14KGo1UxToVzLTIufyVSgeMF6Nb7yArmP&sz=w1000" alt="" />
         </div>

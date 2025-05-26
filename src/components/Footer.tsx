@@ -1,5 +1,5 @@
-import { useTranslation } from "react-i18next"; // Assuming react-i18next
-import { FaFacebookF, FaLinkedinIn, FaTelegramPlane } from "react-icons/fa";
+import { LiaFacebookF, LiaLinkedin, LiaTelegram } from "react-icons/lia";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -37,7 +37,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between py-16 gap-12 md:gap-8">
             <div className="flex gap-16 items-start justify-between">
               <img
-                src="/logo.png" // Ensure path is correct
+                src="/logo.png"
                 className="w-24 h-24 md:w-32 md:h-32 flex-shrink-0 object-contain" // Adjusted size and added shrink
                 alt="Fortuna Navale Logo"
               />
@@ -48,7 +48,7 @@ export default function Footer() {
                 {menuItems.map((item) => (
                   <li key={item.key}>
                     <a
-                      href={`#${item.key}`} // Basic anchor link, adjust as needed
+                      href={`#${item.key}`}
                       className="text-sm font-semibold hover:text-primary uppercase" // Added styling
                     >
                       {item.label}
@@ -57,7 +57,6 @@ export default function Footer() {
                 ))}
               </ul>
             </nav>
-            {/* Center Section: Contacts */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 text-sm">
               {Array.isArray(contacts) &&
                 contacts?.map((contact, index) => (
@@ -81,13 +80,12 @@ export default function Footer() {
                 ))}
             </div>
 
-            {/* Right Section: Social Icons */}
           </div>
           <div className="flex justify-between pb-8">
             <p className="text-sm text-secondary-foreground/80">
               &copy; 2025 Fortuna Navale, website made by <a className="underline" target="_blank" href="https://www.firsof.com">Firsof</a>
             </p>
-            <div className="flex flex-row gap-4 items-center md:items-end md:pt-0">
+            <div className="flex flex-row gap-4 items-center justify-center md:items-end md:pt-0">
               <a
                 href={socialLinks.facebook}
                 target="_blank"
@@ -95,7 +93,7 @@ export default function Footer() {
                 aria-label="Facebook"
                 className="text-primary hover:text-orange-300"
               >
-                <FaFacebookF size={24} />
+                <LiaFacebookF size={20} />
               </a>
               <a
                 href={socialLinks.linkedin}
@@ -104,7 +102,7 @@ export default function Footer() {
                 aria-label="LinkedIn"
                 className="text-primary hover:text-orange-300"
               >
-                <FaLinkedinIn size={24} />
+                <LiaLinkedin size={24} />
               </a>
               <a
                 href={socialLinks.telegram}
@@ -113,7 +111,7 @@ export default function Footer() {
                 aria-label="Telegram"
                 className="text-primary hover:text-orange-300"
               >
-                <FaTelegramPlane size={24} />
+                <LiaTelegram size={24} />
               </a>
             </div>
           </div>

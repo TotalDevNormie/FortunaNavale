@@ -67,20 +67,17 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed w-full pt-2 backdrop-blur-sm bg-secondary/40 isolate z-50">
-      <div className="absolute top-0 left-0 isolate py-2 pl-4 pr-[10rem]">
+    <header className="fixed w-full backdrop-blur-sm bg-secondary/40 isolate z-50">
+      <div className="absolute top-0 left-0 -z-1 isolate py-2 pl-4 pr-[10rem]">
         <img
           src={Shape}
-          alt=""
           className="absolute top-[-2rem] left-0 w-[200%] h-[240%] object-fill -z-10"
         />
         <Link to={`/${currentLangCode}`}>
-          <img src={LogoFull} alt="Fortuna Navale Logo" className="h-14" />
+          <img src={LogoFull} alt="Fortuna Navale Logo" className="h-14 ml-4" />
         </Link>
       </div>
-
-      {/* Desktop Navigation */}
-      <div className="w-fit-container mx-auto hidden 2xl:flex items-center gap-4 py-4 justify-between">
+      <div className="lg:w-fit-container w-2/3 2xl:mr-auto! mr-8! ml-auto hidden lg:flex items-center gap-4 py-4 justify-between">
         <NavigationMenu className="w-full max-w-auto justify-stretch *:w-full">
           <NavigationMenuList className="w-5/6 justify-between gap-4">
             {pages.map((page, index) => (
@@ -121,9 +118,7 @@ export default function Header() {
           </Button>
         </div>
       </div>
-
-      {/* Mobile Navigation */}
-      <div className="2xl:hidden flex justify-end p-4">
+      <div className="lg:hidden z-100 ml-auto w-fit py-4 px-8">
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild>
             <Button
