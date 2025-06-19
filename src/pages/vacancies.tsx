@@ -21,6 +21,7 @@ export type JobTranslation = {
   title: string;
   excerpt: string;
   jobFormat: string;
+  jobType: string;
   experience: string;
   responsibilities: string[];
   requirements: string[];
@@ -188,10 +189,12 @@ export default function Vacancies() {
           </h2>
           <p>{t("page.vacancies.didntFind.content")}</p>
           <form
-            action=""
+            action="https://formspree.io/f/meokzeqw"
+            encType="multipart/form-data"
             id="vacancies"
             className="flex flex-col md:flex-row gap-4 items-stretch items-end mt-16"
           >
+            <input type="hidden" name="vacancie" value="Not specified" />
             <label>
               {t("page.vacancies.form.name")}
               <span className="text-red-500">*</span>

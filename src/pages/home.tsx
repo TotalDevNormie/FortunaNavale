@@ -140,7 +140,7 @@ export default function Home() {
               />
             ))}
         </div>
-        <Button className="self-end">
+        <Button className="md:self-end cursor-pointer">
           <Link to={`/${i18n.language}/contact`}>
             {t("buttons.orderService")}
           </Link>
@@ -160,7 +160,7 @@ export default function Home() {
               />
             ))}
         </div>
-        <Button className="self-end cursor-pointer">
+        <Button className="md:self-end cursor-pointer">
           <Link to={`/${i18n.language}/projects`}>{t("buttons.more")}</Link>
         </Button>
       </WavyContainer>
@@ -169,8 +169,14 @@ export default function Home() {
           {t("page.home.partners.title")}
         </h2>
         <div className="flex justify-around flex-wrap gap-8 h-[5rem]">
-          <img src="https://drive.google.com/thumbnail?id=1sM3fK7ylRzMfgw4-uHZyDJ0cqc_5ogCB&sz=w1000" alt="" />
-          <img src="https://drive.google.com/thumbnail?id=14KGo1UxToVzLTIufyVSgeMF6Nb7yArmP&sz=w1000" alt="" />
+          <img
+            src="https://drive.google.com/thumbnail?id=1sM3fK7ylRzMfgw4-uHZyDJ0cqc_5ogCB&sz=w1000"
+            alt=""
+          />
+          <img
+            src="https://drive.google.com/thumbnail?id=14KGo1UxToVzLTIufyVSgeMF6Nb7yArmP&sz=w1000"
+            alt=""
+          />
         </div>
       </WavyContainer>
       <Map />

@@ -38,7 +38,7 @@ export default function Footer() {
             <div className="flex gap-16 items-start justify-between">
               <img
                 src="/logo.png"
-                className="w-24 h-24 md:w-32 md:h-32 flex-shrink-0 object-contain" // Adjusted size and added shrink
+                className="w-24 h-24 md:w-32 md:h-32 flex-shrink-0 object-contain"
                 alt="Fortuna Navale Logo"
               />
             </div>
@@ -49,7 +49,7 @@ export default function Footer() {
                   <li key={item.key}>
                     <a
                       href={`#${item.key}`}
-                      className="text-sm font-semibold hover:text-primary uppercase" // Added styling
+                      className="text-sm font-semibold hover:text-primary uppercase"
                     >
                       {item.label}
                     </a>
@@ -71,7 +71,7 @@ export default function Footer() {
                       {contact.email}
                     </a>
                     <a
-                      href={`tel:${contact.phone.replace(/\s/g, "")}`} // Remove spaces for tel link
+                      href={`tel:${contact.phone.replace(/\s/g, "")}`}
                       className="block text-primary hover:text-orange-300"
                     >
                       {contact.phone}
@@ -79,11 +79,17 @@ export default function Footer() {
                   </div>
                 ))}
             </div>
-
           </div>
           <div className="flex justify-between pb-8">
             <p className="text-sm text-secondary-foreground/80">
-              &copy; 2025 Fortuna Navale, website made by <a className="underline" target="_blank" href="https://www.firsof.com">Firsof</a>
+              &copy; 2025 Fortuna Navale, website made by{" "}
+              <a
+                className="underline"
+                target="_blank"
+                href="https://www.firsof.com"
+              >
+                Firsof
+              </a>
             </p>
             <div className="flex flex-row gap-4 items-center justify-center md:pt-0">
               <a

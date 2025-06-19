@@ -67,7 +67,7 @@ export default function Vacancie() {
             <h2 className="font-semibold">
               {t("page.vacancies.info.jobType")}:
             </h2>
-            <p>Полная занятость</p>
+            <p>{job.jobType}</p>
           </div>
           <div>
             <h2 className="font-semibold">
@@ -122,10 +122,13 @@ export default function Vacancie() {
             {t("page.vacancies.jobInterested")}
           </h2>
           <form
-            action=""
+            action="https://formspree.io/f/meokzeqw"
+            encType="multipart/form-data"
             id="vacancie"
+            method="POST"
             className="flex flex-col md:flex-row gap-4 items-stretch items-end mt-16"
           >
+            <input type="hidden" name="vacancie" value={jobInfo.title} />
             <label>
               {t("page.vacancies.form.name")}
               <span className="text-red-500">*</span>

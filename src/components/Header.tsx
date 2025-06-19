@@ -77,7 +77,7 @@ export default function Header() {
           <img src={LogoFull} alt="Fortuna Navale Logo" className="h-14 ml-4" />
         </Link>
       </div>
-      <div className="lg:w-fit-container w-2/3 2xl:mr-auto! mr-8! ml-auto hidden lg:flex items-center gap-4 py-4 justify-between">
+      <div className="max-w-[60rem] w-2/3 2xl:mr-auto! mr-8! ml-auto hidden lg:flex items-center gap-4 py-4 justify-between">
         <NavigationMenu className="w-full max-w-auto justify-stretch *:w-full">
           <NavigationMenuList className="w-5/6 justify-between gap-4">
             {pages.map((page, index) => (
