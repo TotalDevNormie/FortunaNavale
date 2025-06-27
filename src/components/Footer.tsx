@@ -1,4 +1,4 @@
-import { LiaFacebookF, LiaLinkedin, LiaTelegram } from "react-icons/lia";
+import { LiaLinkedin } from "react-icons/lia";
 import { useTranslation } from "react-i18next";
 
 export default function Footer() {
@@ -23,12 +23,6 @@ export default function Footer() {
     { key: "vacancies", label: t("menu.vacancies") },
     { key: "contact", label: t("menu.contact") },
   ];
-
-  const socialLinks = {
-    facebook: "#",
-    linkedin: "#",
-    telegram: "#",
-  };
 
   return (
     <footer className="bg-secondary text-secondary-foreground">
@@ -93,31 +87,13 @@ export default function Footer() {
             </p>
             <div className="flex flex-row gap-4 items-center justify-center md:pt-0">
               <a
-                href={socialLinks.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="text-primary hover:text-orange-300"
-              >
-                <LiaFacebookF size={20} />
-              </a>
-              <a
-                href={socialLinks.linkedin}
+                href="https://www.linkedin.com/company/sarl-fortuna-navale/?viewAsMember=true"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
                 className="text-primary hover:text-orange-300"
               >
                 <LiaLinkedin size={24} />
-              </a>
-              <a
-                href={socialLinks.telegram}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Telegram"
-                className="text-primary hover:text-orange-300"
-              >
-                <LiaTelegram size={24} />
               </a>
             </div>
           </div>
