@@ -213,103 +213,109 @@
         "Flexible": "Flexible"
       },
       "postings": {
-        "shipbuilder-1": {
-          "title": "Constructeur naval",
-          "excerpt": "Si vous avez de l'expérience dans les structures métalliques, l'assemblage et la réparation de navires, et le désir de travailler dans une entreprise stable, nous serons heureux de vous accueillir dans notre équipe.",
-          "jobFormat": "Sur place",
-          "jobType": "Temps plein",
-          "experience": "Plus de 3 ans",
+        "installer-1": {
+          "title": "Monteur (Construction navale / Réparation navale)",
+          "excerpt": "Réalisation de travaux de montage sur la coque et les équipements des navires avec aide à l'organisation du logement en France",
+          "jobFormat": "Sur site",
+          "jobType": "Contrat / Travaux en rotation",
+          "experience": "Au moins 1 an d'expérience en tant que monteur dans la construction navale ou la réparation navale",
           "responsibilities": [
-            "Assemblage, installation et réparation de coques de navires selon les dessins et la documentation technique.",
-            "Travail avec des structures métalliques, soudure, rivetage, étanchéité des joints.",
-            "Installation et essai des équipements du navire.",
-            "Interaction avec les ingénieurs et autres spécialistes pour le contrôle qualité des travaux.",
-            "Respect des règles de sécurité et des normes de construction navale."
+            "Réaliser des travaux de montage sur la coque et les équipements des navires",
+            "Assembler et installer les éléments structurels selon les plans",
+            "Utiliser des outils manuels et mécanisés",
+            "Respecter les règles de sécurité et les normes de production"
           ],
           "requirements": [
-            "Expérience dans la construction navale à partir de 3 ans",
-            "Connaissance des technologies d'assemblage et de réparation de navires.",
-            "Maîtrise des outils et équipements (postes de soudure, découpe de métaux, etc.).",
-            "Lecture de dessins techniques et de schémas.",
-            "Endurance physique, sens des responsabilités et souci du détail.",
-            "Prêt à travailler dans les conditions du chantier naval (ateliers ouverts et fermés, plans d'eau)."
+            "Au moins 1 an d'expérience en tant que monteur dans la construction navale ou la réparation navale",
+            "Capacité à lire des plans techniques",
+            "Sens des responsabilités, précision, discipline",
+            "Citoyenneté UE ou volonté d'obtenir les permis de travail"
           ],
-          "advantages": [
-            "Diplôme dans le domaine [construction navale, génie mécanique, métallurgie].",
-            "Expérience avec les technologies de construction navale modernes.",
-            "Compétences en soudure et travail avec l'hydraulique."
-          ],
+          "advantages": ["Connaissances de base en français ou anglais"],
           "weOffer": [
-            "Emploi officiel et salaire stable.",
-            "Opportunités d'évolution de carrière et de formation.",
-            "Travail dans une grande entreprise de construction navale avec des équipements modernes.",
-            "Équipe conviviale et conditions de travail sûres."
+            "Taux à partir de 11 € brut par heure",
+            "Temps plein, heures supplémentaires possibles",
+            "Aide à l'organisation du logement",
+            "Emploi officiel conformément à la législation française"
           ]
         },
-        "ship-electrician-1": {
-          "title": "Électricien naval",
-          "excerpt": "Si vous avez de l'expérience dans l'installation, le diagnostic et la réparation des systèmes électriques des navires, et le désir de travailler dans une entreprise stable, nous serons heureux de vous accueillir dans notre équipe.",
-          "jobFormat": "Sur place",
+        "mechanic-1": {
+          "title": "Mécanicien",
+          "excerpt": "Réaliser des travaux mécaniques de maintenance et de réparation des systèmes navals dans un chantier naval en France",
+          "jobFormat": "Sur site",
           "jobType": "Temps plein",
-          "experience": "Plus de 3 ans",
+          "experience": "Expérience en tant que mécanicien en réparation navale ou sur un chantier naval",
           "responsibilities": [
-            "Assemblage, installation et réparation de coques de navires selon les dessins et la documentation technique.",
-            "Travail avec des structures métalliques, soudure, rivetage, étanchéité des joints.",
-            "Installation et essai des équipements du navire.",
-            "Interaction avec les ingénieurs et autres spécialistes pour le contrôle qualité des travaux.",
-            "Respect des règles de sécurité et des normes de construction navale."
+            "Réaliser des travaux mécaniques sur le site de réparation navale",
+            "Monter et démonter l'équipement",
+            "Diagnostiquer, entretenir et réparer les systèmes et mécanismes navals"
           ],
           "requirements": [
-            "Expérience dans la construction navale à partir de 3 ans",
-            "Connaissance des technologies d'assemblage et de réparation de navires.",
-            "Maîtrise des outils et équipements (postes de soudure, découpe de métaux, etc.).",
-            "Lecture de dessins techniques et de schémas.",
-            "Endurance physique, sens des responsabilités et souci du détail.",
-            "Prêt à travailler dans les conditions du chantier naval (ateliers ouverts et fermés, plans d'eau)."
+            "Expérience en tant que mécanicien en réparation navale ou sur un chantier naval",
+            "Capacité à travailler avec la documentation technique",
+            "Connaissance des règles de sécurité",
+            "Sens des responsabilités, discipline"
           ],
-          "advantages": [
-            "Diplôme dans le domaine [construction navale, génie mécanique, métallurgie].",
-            "Expérience avec les technologies de construction navale modernes.",
-            "Compétences en soudure et travail avec l'hydraulique."
-          ],
+          "advantages": ["Connaissance de l'anglais ou du français"],
           "weOffer": [
-            "Emploi officiel et salaire stable.",
-            "Opportunités d'évolution de carrière et de formation.",
-            "Travail dans une grande entreprise de construction navale avec des équipements modernes.",
-            "Équipe conviviale et conditions de travail sûres."
+            "Emploi officiel en France",
+            "Paiement des salaires en temps voulu",
+            "Aide dans les démarches administratives",
+            "Logement et frais de déplacement selon accord"
           ]
         },
-        "ship-electrician-2": {
-          "title": "Électricien naval",
-          "excerpt": "Si vous avez de l'expérience dans l'installation, le diagnostic et la réparation des systèmes électriques des navires, et le désir de travailler dans une entreprise stable, nous serons heureux de vous accueillir dans notre équipe.",
-          "jobFormat": "Sur place",
+        "welder-1": {
+          "title": "Soudeur",
+          "excerpt": "Réaliser des travaux de soudage dans un chantier naval à Saint-Nazaire en utilisant différentes méthodes de soudage",
+          "jobFormat": "Sur site",
           "jobType": "Temps plein",
-          "experience": "Plus de 3 ans",
+          "experience": "Expérience en soudage dans les chantiers navals ou sites de réparation navale",
           "responsibilities": [
-            "Assemblage, installation et réparation de coques de navires selon les dessins et la documentation technique.",
-            "Travail avec des structures métalliques, soudure, rivetage, étanchéité des joints.",
-            "Installation et essai des équipements du navire.",
-            "Interaction avec les ingénieurs et autres spécialistes pour le contrôle qualité des travaux.",
-            "Respect des règles de sécurité et des normes de construction navale."
+            "Réaliser des travaux de soudage (MMA, MIG/MAG, TIG)",
+            "Travailler selon les plans techniques",
+            "Préparer et nettoyer les soudures",
+            "Travailler sur les structures de coque et de tuyauterie du navire"
           ],
           "requirements": [
-            "Expérience dans la construction navale à partir de 3 ans",
-            "Connaissance des technologies d'assemblage et de réparation de navires.",
-            "Maîtrise des outils et équipements (postes de soudure, découpe de métaux, etc.).",
-            "Lecture de dessins techniques et de schémas.",
-            "Endurance physique, sens des responsabilités et souci du détail.",
-            "Prêt à travailler dans les conditions du chantier naval (ateliers ouverts et fermés, plans d'eau)."
+            "Expérience en soudage dans les chantiers navals ou sites de réparation navale",
+            "Lecture de schémas et de plans de soudage",
+            "Respect des normes de qualité et des règles de sécurité"
           ],
           "advantages": [
-            "Diplôme dans le domaine [construction navale, génie mécanique, métallurgie].",
-            "Expérience avec les technologies de construction navale modernes.",
-            "Compétences en soudure et travail avec l'hydraulique."
+            "Présence de certifications",
+            "Connaissance de l'anglais ou du français"
           ],
           "weOffer": [
-            "Emploi officiel et salaire stable.",
-            "Opportunités d'évolution de carrière et de formation.",
-            "Travail dans une grande entreprise de construction navale avec des équipements modernes.",
-            "Équipe conviviale et conditions de travail sûres."
+            "Emploi officiel en France",
+            "Salaire stable",
+            "Assistance dans les démarches administratives",
+            "Possibilité de logement — à discuter"
+          ]
+        },
+        "installer-2": {
+          "title": "Monteur",
+          "excerpt": "Installation et démontage d'équipements et de structures dans un chantier naval à Saint-Nazaire",
+          "jobFormat": "Sur site",
+          "jobType": "Temps plein",
+          "experience": "Expérience comme monteur en réparation navale ou dans le secteur industriel",
+          "responsibilities": [
+            "Installer et démonter l'équipement et les structures navales",
+            "Travailler avec des plans et de la documentation technique",
+            "Ajuster et installer des éléments métalliques",
+            "Utiliser des outils manuels et électriques"
+          ],
+          "requirements": [
+            "Expérience comme monteur en réparation navale ou dans le secteur industriel",
+            "Capacité à lire des plans",
+            "Connaissance des règles de sécurité de base",
+            "Approche responsable du travail"
+          ],
+          "advantages": ["Connaissance de l'anglais ou du français"],
+          "weOffer": [
+            "Emploi officiel en France",
+            "Paiement des salaires en temps voulu",
+            "Aide dans les démarches administratives",
+            "Possibilité de logement — selon accord"
           ]
         }
       }

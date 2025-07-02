@@ -1,35 +1,46 @@
 [
   {
-    "id": "shipbuilder-1",
-    "title": "Shipbuilder",
-    "country": "Latvia",
-    "city": "Riga",
-    "employmentType": "Full-time",
-    "salaryBruto": "2000-3000",
+    "id": "installer-1",
+    "title": "Installer (Shipbuilding / Ship Repair)",
+    "country": "France",
+    "city": "Saint-Nazaire",
+    "employmentType": "Contract",
+    "salaryBruto": "from 11 €/h",
     "salaryCurency": "EUR",
-    "datePosted": "10.04.2025",
-    "image": "https://drive.google.com/thumbnail?id=18VVeyPmAFaxnwq32UXJqEXPpPY53XYOP&sz=w1500"
+    "datePosted": "02.07.2025",
+    "image": null
   },
   {
-    "id": "ship-electrician-1",
-    "title": "Ship electrician",
+    "id": "mechanic-1",
+    "title": "Mechanic",
     "country": "France",
-    "city": "Gavr",
+    "city": "Saint-Nazaire",
     "employmentType": "Full-time",
-    "salaryBruto": "2000-3000",
+    "salaryBruto": "from 11 €/h",
     "salaryCurency": "EUR",
-    "datePosted": "10.04.2025",
-    "image": "https://drive.google.com/thumbnail?id=1iXy9FxJZOdc2_gv821DPJ_ExhNt9QHup&sz=w1500"
+    "datePosted": "02.07.2025",
+    "image": null
   },
   {
-    "id": "ship-electrician-2",
-    "title": "Ship electrician",
+    "id": "welder-1",
+    "title": "Welder",
     "country": "France",
-    "city": "Gavr",
+    "city": "Saint-Nazaire",
     "employmentType": "Full-time",
-    "salaryBruto": "2000-3000",
+    "salaryBruto": "from 13 €/h",
     "salaryCurency": "EUR",
-    "datePosted": "10.04.2025",
-    "image": "https://drive.google.com/thumbnail?id=1iXy9FxJZOdc2_gv821DPJ_ExhNt9QHup&sz=w1500"
+    "datePosted": "02.07.2025",
+    "image": null
+  },
+  {
+    "id": "installer-2",
+    "title": "Installer",
+    "country": "France",
+    "city": "Saint-Nazaire",
+    "employmentType": "Full-time",
+    "salaryBruto": "from 11 €/h",
+    "salaryCurency": "EUR",
+    "datePosted": "02.07.2025",
+    "image": null
   }
 ]

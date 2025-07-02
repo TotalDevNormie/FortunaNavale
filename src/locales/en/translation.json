@@ -213,103 +213,106 @@
         "Flexible": "Flexible"
       },
       "postings": {
-        "shipbuilder-1": {
-          "title": "Shipbuilder",
-          "excerpt": "If you have experience working with metal structures, assembling and repairing vessels, and a desire to work in a stable company, we will be happy to see you on our team.",
+        "installer-1": {
+          "title": "Installer (Shipbuilding / Ship Repair)",
+          "excerpt": "Performing installation work on ship hulls and equipment with accommodation assistance in France",
           "jobFormat": "On-site",
-          "jobType": "Full-time",
-          "experience": "More than 3 years",
+          "jobType": "Contract / Rotational shift",
+          "experience": "At least 1 year of experience as an installer in shipbuilding or ship repair",
           "responsibilities": [
-            "Assembly, installation, and repair of vessel hulls according to drawings and technical documentation.",
-            "Workinjobg with metal structures, welding, riveting, sealing seams.",
-            "Installation and testing of ship equipment.",
-            "Interaction with engineers and other specialists to control the quality of work.",
-            "Compliance with safety regulations and shipbuilding standards."
+            "Perform installation work on ship hulls and equipment",
+            "Assemble and install structural components according to drawings",
+            "Operate manual and mechanized tools",
+            "Adhere to safety regulations and production standards"
           ],
           "requirements": [
-            "Experience in shipbuilding from 3 years",
-            "Knowledge of vessel assembly and repair technologies.",
-            "Ability to work with tools and equipment (welding machines, metal cutting, etc.).",
-            "Reading technical drawings and diagrams.",
-            "Physical stamina, responsibility, and attention to detail.",
-            "Readiness to work in shipyard conditions (open and closed workshops, water bodies)."
+            "At least 1 year of experience as an installer in shipbuilding or ship repair",
+            "Ability to read technical drawings",
+            "Responsibility, accuracy, discipline",
+            "EU citizenship or willingness to obtain work permits"
           ],
-          "advantages": [
-            "Availability of specialized education [shipbuilding, mechanical engineering, metal processing].",
-            "Experience with modern shipbuilding technologies.",
-            "Welding and hydraulics skills."
-          ],
+          "advantages": ["Basic knowledge of French or English"],
           "weOffer": [
-            "Official employment and stable salary.",
-            "Opportunities for career growth and training.",
-            "Work in a large shipbuilding company with modern equipment.",
-            "Friendly team and safe working conditions."
+            "Rate from €11 gross per hour",
+            "Full-time, possible overtime",
+            "Assistance with accommodation arrangements",
+            "Official employment according to French law"
           ]
         },
-        "ship-electrician-1": {
-          "title": "Ship Electrician",
-          "excerpt": "If you have experience in installation, diagnostics, and repair of ship electrical systems, and a desire to work in a stable company, we will be happy to see you on our team.",
+        "mechanic-1": {
+          "title": "Mechanic",
+          "excerpt": "Perform mechanical work on maintenance and repair of ship systems at a ship repair yard in France",
           "jobFormat": "On-site",
           "jobType": "Full-time",
-          "experience": "More than 3 years",
+          "experience": "Experience as a mechanic in ship repair or on a shipyard",
           "responsibilities": [
-            "Assembly, installation, and repair of vessel hulls according to drawings and technical documentation.",
-            "Working with metal structures, welding, riveting, sealing seams.",
-            "Installation and testing of ship equipment.",
-            "Interaction with engineers and other specialists to control the quality of work.",
-            "Compliance with safety regulations and shipbuilding standards."
+            "Perform mechanical tasks at the ship repair facility",
+            "Assemble and disassemble equipment",
+            "Diagnose, maintain and repair ship systems and mechanisms"
           ],
           "requirements": [
-            "Experience in shipbuilding from 3 years",
-            "Knowledge of vessel assembly and repair technologies.",
-            "Ability to work with tools and equipment (welding machines, metal cutting, etc.).",
-            "Reading technical drawings and diagrams.",
-            "Physical stamina, responsibility, and attention to detail.",
-            "Readiness to work in shipyard conditions (open and closed workshops, water bodies)."
+            "Experience as a mechanic in ship repair or on a shipyard",
+            "Ability to work with technical documentation",
+            "Knowledge of safety procedures",
+            "Responsibility, discipline"
           ],
-          "advantages": [
-            "Availability of specialized education [shipbuilding, mechanical engineering, metal processing].",
-            "Experience with modern shipbuilding technologies.",
-            "Welding and hydraulics skills."
-          ],
+          "advantages": ["Knowledge of English or French"],
           "weOffer": [
-            "Official employment and stable salary.",
-            "Opportunities for career growth and training.",
-            "Work in a large shipbuilding company with modern equipment.",
-            "Friendly team and safe working conditions."
+            "Official employment in France",
+            "Timely salary payments",
+            "Assistance with paperwork",
+            "Accommodation and travel expenses by agreement"
           ]
         },
-        "ship-electrician-2": {
-          "title": "Ship Electrician",
-          "excerpt": "If you have experience in installation, diagnostics, and repair of ship electrical systems, and a desire to work in a stable company, we will be happy to see you on our team.",
+        "welder-1": {
+          "title": "Welder",
+          "excerpt": "Perform welding work at a ship repair yard in Saint-Nazaire using various welding methods",
           "jobFormat": "On-site",
           "jobType": "Full-time",
-          "experience": "More than 3 years",
+          "experience": "Experience in welding on shipyards or ship repair facilities",
           "responsibilities": [
-            "Assembly, installation, and repair of vessel hulls according to drawings and technical documentation.",
-            "Working with metal structures, welding, riveting, sealing seams.",
-            "Installation and testing of ship equipment.",
-            "Interaction with engineers and other specialists to control the quality of work.",
-            "Compliance with safety regulations and shipbuilding standards."
+            "Perform welding work (MMA, MIG/MAG, TIG)",
+            "Work according to technical drawings",
+            "Prepare and clean weld seams",
+            "Work on hull and piping structures on the ship"
           ],
           "requirements": [
-            "Experience in shipbuilding from 3 years",
-            "Knowledge of vessel assembly and repair technologies.",
-            "Ability to work with tools and equipment (welding machines, metal cutting, etc.).",
-            "Reading technical drawings and diagrams.",
-            "Physical stamina, responsibility, and attention to detail.",
-            "Readiness to work in shipyard conditions (open and closed workshops, water bodies)."
+            "Experience in welding on shipyards or ship repair facilities",
+            "Ability to read welding diagrams and drawings",
+            "Adhere to quality standards and safety procedures"
           ],
-          "advantages": [
-            "Availability of specialized education [shipbuilding, mechanical engineering, metal processing].",
-            "Experience with modern shipbuilding technologies.",
-            "Welding and hydraulics skills."
-          ],
+          "advantages": ["Certifications", "Knowledge of English or French"],
           "weOffer": [
-            "Official employment and stable salary.",
-            "Opportunities for career growth and training.",
-            "Work in a large shipbuilding company with modern equipment.",
-            "Friendly team and safe working conditions."
+            "Official employment in France",
+            "Stable salary",
+            "Assistance with paperwork",
+            "Possibility of accommodation — to be discussed"
+          ]
+        },
+        "installer-2": {
+          "title": "Installer",
+          "excerpt": "Installation and dismantling of equipment and structures at a ship repair yard in Saint-Nazaire",
+          "jobFormat": "On-site",
+          "jobType": "Full-time",
+          "experience": "Experience as an installer in ship repair or industrial sector",
+          "responsibilities": [
+            "Install and dismantle ship equipment and structures",
+            "Work with drawings and technical documentation",
+            "Fit and install metal components",
+            "Use manual and power tools"
+          ],
+          "requirements": [
+            "Experience as an installer in ship repair or industrial sector",
+            "Ability to read drawings",
+            "Knowledge of basic safety procedures",
+            "Responsible approach to work"
+          ],
+          "advantages": ["Knowledge of English or French"],
+          "weOffer": [
+            "Official employment in France",
+            "Timely salary payments",
+            "Assistance with paperwork",
+            "Possibility of accommodation — by agreement"
           ]
         }
       }
