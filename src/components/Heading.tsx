@@ -15,7 +15,7 @@ const Heading = ({
         backgroundPosition: "center bottom 20%",
       }}
     ></div>
-    <h1 className="text-[clamp(1.5rem,10vw,7rem)] uppercase leading-15 font-mono text-accent-100">
+    <h1 className="text-[clamp(1.5rem,10vw,7rem)] max-w-3/4 uppercase leading-15 md:leading-30 font-mono text-accent-100">
       {children}
     </h1>
   </div>

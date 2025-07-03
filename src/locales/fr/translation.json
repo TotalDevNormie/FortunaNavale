@@ -201,7 +201,8 @@
       "cities": {
         "Riga": "Riga",
         "Gavr": "Le Havre",
-        "Nant": "Nant"
+        "Nant": "Nant",
+        "Saint-Nazaire": "Saint-Nazaire"
       },
       "countries": {
         "Latvia": "Lettonie",
@@ -209,8 +210,7 @@
       },
       "employmentType": {
         "Full-time": "Temps plein",
-        "Part-time": "Temps partiel",
-        "Flexible": "Flexible"
+        "Contract": "Contrat"
       },
       "postings": {
         "installer-1": {

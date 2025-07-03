@@ -8,7 +8,7 @@
     "salaryBruto": "from 11 €/h",
     "salaryCurency": "EUR",
     "datePosted": "02.07.2025",
-    "image": null
+    "image": "https://drive.google.com/thumbnail?id=10gyNlFNu9rjeF3yf-ok9J9CJu0fV8StP&sz=w1000"
   },
   {
     "id": "mechanic-1",
@@ -19,7 +19,7 @@
     "salaryBruto": "from 11 €/h",
     "salaryCurency": "EUR",
     "datePosted": "02.07.2025",
-    "image": null
+    "image": "https://drive.google.com/thumbnail?id=19jAEXtaH4rmeo8-CR28r1KekWpZUEE2L&sz=w1000"
   },
   {
     "id": "welder-1",
@@ -30,7 +30,7 @@
     "salaryBruto": "from 13 €/h",
     "salaryCurency": "EUR",
     "datePosted": "02.07.2025",
-    "image": null
+    "image": "https://drive.google.com/thumbnail?id=18VVeyPmAFaxnwq32UXJqEXPpPY53XYOP&sz=w1000"
   },
   {
     "id": "installer-2",
@@ -41,6 +41,6 @@
     "salaryBruto": "from 11 €/h",
     "salaryCurency": "EUR",
     "datePosted": "02.07.2025",
-    "image": null
+    "image": "https://drive.google.com/thumbnail?id=10gyNlFNu9rjeF3yf-ok9J9CJu0fV8StP&sz=w1000"
   }
 ]

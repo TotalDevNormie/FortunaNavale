@@ -201,7 +201,8 @@
       "cities": {
         "Riga": "Рига",
         "Gavr": "Гавр",
-        "Nant": "Нант"
+        "Nant": "Нант",
+        "Saint-Nazaire": "Сант-Назаре"
       },
       "countries": {
         "Latvia": "Латвия",
@@ -209,8 +210,7 @@
       },
       "employmentType": {
         "Full-time": "Полная занятость",
-        "Part-time": "Частичная занятость",
-        "Flexible": "Гибкий график"
+        "Contract": "Контракт"
       },
       "postings": {
         "shipbuilder-1": {
