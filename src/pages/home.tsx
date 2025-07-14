@@ -103,11 +103,11 @@ export default function Home() {
           </span>
         </div>
       </Heading>
-      <WavyContainer className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 py-16">
+      <WavyContainer className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 py-16">
         <div className="flex items-center justify-center lg:justify-start">
           <img
-            src="https://drive.google.com/thumbnail?id=19LIm62cwvxbOleREuXLyp6S8QgdlMu_y&sz=w500"
-            className="w-full h-64 object-cover"
+            src="https://drive.google.com/thumbnail?id=1oMRwXUC2rowMBIZ9e9L7EHbnXU0JpTI7&sz=w500"
+            className="w-full h-100 object-cover"
             alt=""
           />
         </div>
